@@ -1,7 +1,8 @@
 // SN512A (Coosea/AT&T) MT6835 port.
 // Kernel: 5.15.197-android13-8-00005-g2d8ad9139b89 = GKI android13-5.15-2026-03_r2 (CI build 15063902)
 // Offsets: extracted from certified GKI vmlinux/System.map.
-// Fields still marked IQOO need per-kernel disasm verification.
+// Disasm-derived fields re-verified against our vmlinux
+// (capstone aarch64 + System.map + .BTF + DWARF); see SN512A_PORT_NOTES.md.
 #ifndef OFFSET_H
 #define OFFSET_H
 
@@ -106,15 +107,29 @@
 #define COMPACT_RT_MUTEX_WAITER 1
 #define SLIDE_RB_PARENT_TYPE_RESTORE 1ULL
 #define SLIDE_TRACEFS_EVENT_ID 108
-#define SLIDE_TRACEFS_WORKER_CALLER_OFF 0x00194758ULL
-#define SLIDE_TRACEFS_VFORK_CALLER_OFF 0x0014d098ULL
+// sched_blocked_reason.caller = __get_wchan(task) (verified: the trace
+// event calls __get_wchan at trace_event_raw_event_sched_blocked_reason
+// +0x144), i.e. the first return address outside __sched_text
+// ([0xffffffc009775438, 0xffffffc009783f28) in this image).
+// WORKER: idle kworkers block in worker_thread's sleep path; the sole
+// `bl schedule` is at 0xffffffc008179348, so the wchan lands on the
+// return address 0xffffffc00817934c = base + 0x17934c.
+// (A second, rare caller exists after `bl schedule_timeout` at
+// worker_thread+0x1bc -> 0x179490; not wired as an anchor.)
+#define SLIDE_TRACEFS_WORKER_CALLER_OFF 0x0017934cULL
+// VFORK: wait_for_vfork_done calls `bl wait_for_common` at
+// 0xffffffc008131fb0. wait_for_common (0xffffffc009777444) and
+// schedule_timeout are inside __sched_text, so the unwind skips them and
+// lands on the return address 0xffffffc008131fb4 = base + 0x131fb4.
+#define SLIDE_TRACEFS_VFORK_CALLER_OFF 0x00131fb4ULL
 // This kernel runs PAC-ret (paciasp/autiasp on every function). Saved PCs
 // carry APIAKey PAC bits in [54:48], and the __get_wchan unwind loop's
 // __sched_text range compares misdetect PAC'd frames depending on the
-// per-boot key. Accept the schedule-internal return address (0x178e52c,
-// the instruction after `bl __schedule` in schedule) as a second anchor.
+// per-boot key. Accept the schedule-internal return address (0x17762cc,
+// the instruction after `bl __schedule` at 0xffffffc0097762c8 in
+// schedule) as a second anchor.
 #define SLIDE_TRACEFS_STRIP_PAC 1
-#define SLIDE_TRACEFS_SCHED_CALLER_OFF 0x00178e52cULL
+#define SLIDE_TRACEFS_SCHED_CALLER_OFF 0x0017762ccULL
 // The matching GKI source uses strncpy_from_user()/strscpy() for SET_NAME.
 // Reconstruct embedded NULs with descending prefix writes; a verbatim blob
 // would truncate at the first NUL and leave the write-only fields unset.
@@ -158,16 +173,30 @@
 // SP.  A local at sp+N is at (frame depth - N), not (frame depth + N).
 //
 // MCAST: __arm64_sys_setsockopt(0x10) + __sys_setsockopt(0x80) +
-// sock_common_setsockopt(0x40) + ipv6_setsockopt(0x40) +
-// do_ipv6_setsockopt(0x60 + 0x260), with greqs at sp+0x40 = 0x390.
+// sock_common_setsockopt(0x40) + udpv6_setsockopt(0x50) +
+// do_ipv6_setsockopt(0x60 + 0x260), with the native greqs
+// (group_source_req, 0x108 copy_from_user) at sp+0x40 = 0x3a0.
+// NOTE: on this kernel the SOCK_DGRAM hop is udpv6_setsockopt
+// (udpv6_prot.setsockopt, frame 0x50), which calls do_ipv6_setsockopt
+// directly with `bl` - NOT a tail call. The iQOO comment listed
+// ipv6_setsockopt(0x40); our chain was verified end-to-end:
+// inet6_dgram_ops.setsockopt = sock_common_setsockopt.cfi_jt,
+// udpv6_prot.setsockopt = udpv6_setsockopt.cfi_jt, and
+// udpv6_setsockopt+0xbc is `bl do_ipv6_setsockopt` for level==IPPROTO_IPV6.
+// (The 0x104 copy at sp+0x148 is the compat path; the 64-bit app takes
+// the native 0x108 copy at sp+0x40.)
 //
 // Stale waiter: __arm64_sys_futex(0xa0) + do_futex(0x140) +
-// futex_wait_requeue_pi(0x1b0), with tree_entry at sp+0x98 = 0x2f8.
-// Therefore the MCAST stamp starts its fake waiter at 0x390 - 0x2f8 = 0x98.
-#define MCAST_WAITER_OFF 0x98
+// futex_wait_requeue_pi(0x1b0), with rt_waiter (rt_mutex_wait_proxy_lock
+// inlined; `add x3, sp, #0x98` passed to rt_mutex_slowlock_block /
+// try_to_take_rt_mutex / remove_waiter) at sp+0x98 = 0x2f8.
+// Therefore the MCAST stamp starts its fake waiter at 0x3a0 - 0x2f8 = 0xa8.
+#define MCAST_WAITER_OFF 0xa8
 // Fake waiter rides the FPSIMD vregs on the SVE restore path.  Its local is
 // at depth __arm64_sys_rt_sigreturn(0x50) + restore_sigframe(0x50) +
-// restore_sve_fpsimd_context(0x40 + 0x230) - sp_local(0x10) = 0x300.
+// restore_sve_fpsimd_context(0x40 + 0x230) - sp_local(0x10) = 0x300
+// (verified: memset(sp+0x10,0,0x210) then __arch_copy_from_user(sp+0x10,..,0x200)
+// in restore_sve_fpsimd_context; identical geometry to iQOO).
 // Align it to the same stale waiter at depth 0x2f8: 0x300 - 0x2f8 = 0x08.
 #define SIGRETURN_FPSIMD_WAITER_OFF 0x08
 // The grown SVE record's Z regs are copied to thread.sve_state (heap), not
