@@ -29,12 +29,21 @@ adb shell 'chmod 755 /data/local/tmp/gl-root /data/local/tmp/ksud-iqoo-z9-5g; ch
 echo "[*] uname -r:"; adb shell 'uname -r'
 
 echo "[*] running exploit via --run-payload (APP_PAYLOAD build, 4 route attempts)"
+adb shell 'rm -f /data/local/tmp/gl-app-run.log'
 adb shell 'SLIDE_SOURCE=tracefs EXPLOIT_ATTEMPTS=8 P0_ATTEMPT_TIMEOUT_SEC=115 EXPLOIT_ATTEMPT_TIMEOUT_SEC=600 \
   /data/local/tmp/gl-root --run-payload /data/local/tmp/gl-app.so \
   /data/local/tmp/gl-root /data/local/tmp/gl-app-run.log' | tee exploit-out/last.log
 
 echo "[*] on-device log tail:"
 adb shell 'tail -40 /data/local/tmp/gl-app-run.log 2>/dev/null'
+
+# Only late-load when the exploit actually rooted this boot.
+if adb shell 'grep -q "exploit completed" /data/local/tmp/gl-app-run.log && grep -q "root=1" /data/local/tmp/gl-app-run.log'; then
+  echo "[*] root=1 confirmed — late-loading KernelSU"
+  adb shell '/data/local/tmp/gl-root --late-load'
+else
+  echo "[!] exploit did not complete — skipping late-load (reboot before retry)"
+fi
 
 echo "[*] checking for root"
 adb shell 'id'
