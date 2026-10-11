@@ -42,6 +42,10 @@ while true; do
             adb shell "ps -A | grep shizuku_server" >> "$LOG" 2>&1
         fi
 
+        # Run GhostLock readiness probe (non-destructive)
+        echo "[$(date)] GhostLock probe..." >> "$LOG"
+        bash ./ghostlock-probe.sh >> "$LOG" 2>&1
+
         # Run comprehensive tests
         echo "[$(date)] Running comprehensive tests..." >> "$LOG"
         bash ./comprehensive-testing.sh >> "$LOG" 2>&1
