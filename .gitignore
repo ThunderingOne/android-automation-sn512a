@@ -28,3 +28,4 @@ kernel/*
 !kernel/*.py
 !kernel/*.config
 !kernel/sn512a-target/
+ksu/*.ko
