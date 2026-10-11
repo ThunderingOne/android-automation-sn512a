@@ -19,6 +19,7 @@ fi
 
 adb get-state 2>/dev/null | grep -q device || { echo "no device"; exit 1; }
 
+export MSYS_NO_PATHCONV=1
 echo "[*] staging payload"
 adb push exploit/cve-2026-43499 /data/local/tmp/gl.so || exit 1
 adb push exploit/cve-2026-43499-root /data/local/tmp/gl-root || exit 1
