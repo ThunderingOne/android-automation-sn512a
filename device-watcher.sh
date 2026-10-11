@@ -27,11 +27,17 @@ while true; do
                 echo "[$(date)] Installing Shizuku..." >> "$LOG"
                 adb install -r ./shizuku.apk >> "$LOG" 2>&1
             fi
-            # Start Shizuku service directly via app_process + ServiceStarter
-            # (verified working on SN512A — starts shizuku_server as shell uid 2000)
+            # Start Shizuku server — verified recipe (subagent-confirmed):
+            # correct class is rikka.shizuku.server.ShizukuService; native libs are
+            # deflated inside the APK so they must be pushed to /data/local/tmp/szlib
             echo "[$(date)] Starting Shizuku service..." >> "$LOG"
+            LIBDIR=./shizuku-libs
+            if [ -d "$LIBDIR" ]; then
+                adb shell 'mkdir -p /data/local/tmp/szlib' >> "$LOG" 2>&1
+                adb push "$LIBDIR/libadb.so" "$LIBDIR/librish.so" "$LIBDIR/libshizuku.so" /data/local/tmp/szlib/ >> "$LOG" 2>&1
+            fi
             APKPATH=$(adb shell "pm path moe.shizuku.privileged.api" | tr -d '\r' | sed 's/package://')
-            adb shell "/system/bin/app_process -Djava.class.path=$APKPATH /system/bin --nice-name=shizuku_starter moe.shizuku.starter.ServiceStarter" >> "$LOG" 2>&1
+            adb shell "setsid /system/bin/app_process -Djava.class.path=$APKPATH -Djava.library.path=/data/local/tmp/szlib /system/bin --nice-name=shizuku_server rikka.shizuku.server.ShizukuService < /dev/null > /data/local/tmp/srv.log 2>&1 &" >> "$LOG" 2>&1
             sleep 3
             adb shell "ps -A | grep shizuku_server" >> "$LOG" 2>&1
         fi
