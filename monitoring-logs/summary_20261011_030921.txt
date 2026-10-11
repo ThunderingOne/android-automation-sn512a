@@ -1,0 +1,17 @@
+# Android System Analysis Report
+# Generated: Sun Oct 11 03:09:24 PDT 2026
+# Device: SN512A00064875
+
+## Analysis Files:
+- System Services: system_services_20261011_030921.txt
+- Accessibility: accessibility_20261011_030921.txt
+- Network: connectivity_20261011_030921.txt, netpolicy_20261011_030921.txt, network_stack_20261011_030921.txt
+- Packages: packages_20261011_030921.txt, third_party_packages_20261011_030921.txt, system_packages_20261011_030921.txt
+- Third-Party Connections: gms_connections_20261011_030921.txt, gsf_connections_20261011_030921.txt, facebook_connections_20261011_030921.txt
+- App Operations: appops_20261011_030921.txt, permissions_20261011_030921.txt
+- Firmware: firmware_20261011_030921.txt
+- Carrier: telephony_20261011_030921.txt, carrier_config_20261011_030921.txt, carrier_info_20261011_030921.txt
+- All Permissions: all_permissions_20261011_030921.txt
+
+## Status:
+Analysis complete. Review individual files for detailed information.

@@ -1,0 +1,22 @@
+=== Semi-Root Alternatives ===
+1. Shizuku (recommended):
+   - Download from: https://shizuku.rikka.app/
+   - Provides ADB-like privileges to apps
+   - Works on non-rooted devices
+   - Requires: Developer Options > Wireless debugging
+
+2. ADB over network:
+   - Enable Wireless debugging in Developer Options
+   - Connect via: adb tcpip 5555
+   - Then: adb connect <device_ip>:5555
+
+3. Magisk (requires bootloader unlock):
+   - Install Magisk APK
+   - Patch boot image
+   - Flash via fastboot or custom recovery
+   - Only works after bootloader unlock
+
+4. System-level apps:
+   - Apps that request Device Admin
+   - Accessibility Services
+   - Custom launchers with system integration

@@ -1,0 +1,52 @@
+NetworkStack version:
+LocalInterface:22:653a7f7fd2390682f0c3739b4d82d9477d1d79f9
+ipmemorystore:11:b24ee617afb80799cb35b6241f5847d786c649f3
+netd:15:2be6ff6fb01645cdddb3bb60f6de5727e5733267
+networkstack:22:653a7f7fd2390682f0c3739b4d82d9477d1d79f9
+
+Device Configs:
+  SKIP_TCP_POLL_IN_LIGHT_DOZE=true
+  FEATURE_IS_UID_NETWORKING_BLOCKED=true
+  IGNORE_TCP_INFO_FOR_BLOCKED_UIDS=true
+
+NetworkStack logs:
+2026-10-11T01:33:42.702621 - [ap0.DHCP] DHCP Packet Listener stopped
+
+Recently active IpClient logs:
+IpClient.wlan0
+  IpClient.wlan0 APF dump:
+    No active ApfFilter; IpClient not yet started.
+  
+  IpClient.wlan0 current ProvisioningConfiguration:
+    N/A
+  
+  IpClient.wlan0 StateMachine dump:
+    2026-10-11T01:17:26.913349 - CMD_SET_MULTICAST_FILTER wlan0/-1 0 0 true [rcvd_in=StoppedState, proc_in=IpClient$StoppedState]
+    2026-10-11T01:25:50.206271 - CMD_SET_MULTICAST_FILTER wlan0/-1 0 0 false [rcvd_in=StoppedState, proc_in=IpClient$StoppedState]
+    2026-10-11T01:25:50.208192 - CMD_SET_MULTICAST_FILTER wlan0/-1 0 0 false [rcvd_in=StoppedState, proc_in=IpClient$StoppedState]
+    2026-10-11T01:25:50.289272 - CMD_SET_MULTICAST_FILTER wlan0/-1 0 0 false [rcvd_in=StoppedState, proc_in=IpClient$StoppedState]
+    2026-10-11T01:25:54.754791 - CMD_SET_MULTICAST_FILTER wlan0/-1 0 0 true [rcvd_in=StoppedState, proc_in=IpClient$StoppedState]
+    2026-10-11T01:44:03.976758 - CMD_STOP wlan0/-1 1 0 null [rcvd_in=StoppedState, proc_in=IpClient$StoppedState]
+    2026-10-11T01:44:03.985522 - CMD_UPDATE_L2INFORMATION wlan0/-1 0 0 Layer2InformationParcelable{l2Key: null, cluster: null, bssid: null} [rcvd_in=null, proc_in=null]
+    2026-10-11T01:44:03.985722 - CMD_STOP wlan0/-1 1 0 null [rcvd_in=StoppedState, proc_in=IpClient$StoppedState]
+    2026-10-11T01:44:03.986103 - CMD_TERMINATE_AFTER_STOP wlan0/-1 0 0 null [rcvd_in=StoppedState, proc_in=IpClient$StoppedState]
+    2026-10-11T01:44:03.986451 - INVOKE onQuit()
+    2026-10-11T01:44:05.065508 - CMD_SET_MULTICAST_FILTER wlan0/-1 0 0 true [rcvd_in=StoppedState, proc_in=IpClient$StoppedState]
+  
+  IpClient.wlan0 connectivity packet log:
+  
+  Debug with python and scapy via:
+  shell$ python
+  >>> from scapy import all as scapy
+  >>> scapy.Ether("<paste_hex_string>".decode("hex")).show2()
+  
+
+Other IpClient logs:
+
+Validation logs (most recent first):
+101 - oemsetupd
+  2026-10-11T01:25:13.776072 - Network would not satisfy default request, not validating
+100 - oemsetupd
+  2026-10-11T01:24:02.735622 - Network would not satisfy default request, not validating
+
+useNeighborResource: true

@@ -1,0 +1,225 @@
+[ro.board.first_api_level]: [33]
+[ro.board.platform]: [mt6835]
+[ro.bootloader]: [unknown]
+[ro.build.ab_update]: [true]
+[ro.build.backported_fixes.alias_bitset.long_list]: [2]
+[ro.build.characteristics]: [default]
+[ro.build.date]: [Sat Sep  5 17:02:00 CST 2026]
+[ro.build.date.utc]: [1788598920]
+[ro.build.description]: [sys_mssi_64_ww_armv82-user 15 AP3A.240905.015.A2 1788595109 release-keys]
+[ro.build.display.id]: [SN512AA10214]
+[ro.build.fingerprint]: [ATT/SN512A/SN512A:15/AP3A.240905.015.A2/1788595109:user/release-keys]
+[ro.build.flavor]: [sys_mssi_64_ww_armv82-user]
+[ro.build.host]: [tw-bs1]
+[ro.build.id]: [AP3A.240905.015.A2]
+[ro.build.product]: [mssi_64_ww_armv82]
+[ro.build.tags]: [release-keys]
+[ro.build.type]: [user]
+[ro.build.user]: [jenkins]
+[ro.build.version.all_codenames]: [REL]
+[ro.build.version.base_os]: []
+[ro.build.version.codename]: [REL]
+[ro.build.version.incremental]: [1788595109]
+[ro.build.version.known_codenames]: [Base,Base11,Cupcake,Donut,Eclair,Eclair01,EclairMr1,Froyo,Gingerbread,GingerbreadMr1,Honeycomb,HoneycombMr1,HoneycombMr2,IceCreamSandwich,IceCreamSandwichMr1,JellyBean,JellyBeanMr1,JellyBeanMr2,Kitkat,KitkatWatch,Lollipop,LollipopMr1,M,N,NMr1,O,OMr1,P,Q,R,S,Sv2,Tiramisu,UpsideDownCake,VanillaIceCream]
+[ro.build.version.min_supported_target_sdk]: [28]
+[ro.build.version.preview_sdk]: [0]
+[ro.build.version.preview_sdk_fingerprint]: [REL]
+[ro.build.version.release]: [15]
+[ro.build.version.release_or_codename]: [15]
+[ro.build.version.release_or_preview_display]: [15]
+[ro.build.version.sdk]: [35]
+[ro.build.version.security_patch]: [2026-09-05]
+[ro.build.version.trunk]: [15]
+[ro.hardware]: [mt6835]
+[ro.hardware.egl]: [meow]
+[ro.hardware.gatekeeper]: [trustonic]
+[ro.hardware.gralloc]: [common]
+[ro.hardware.hwcomposer]: [mtk_common]
+[ro.hardware.vulkan]: [mali]
+[ro.product.ab_ota_partitions]: [boot,product,system,system_ext,vendor]
+[ro.product.board]: [k6835v2_64]
+[ro.product.bootimage.brand]: [ATT]
+[ro.product.bootimage.device]: [SN512A]
+[ro.product.bootimage.manufacturer]: [Coosea]
+[ro.product.bootimage.model]: [SN512A]
+[ro.product.bootimage.name]: [SN512A]
+[ro.product.brand]: [ATT]
+[ro.product.build.date]: [Sat Sep  5 15:58:29 CST 2026]
+[ro.product.build.date.utc]: [1788595109]
+[ro.product.build.fingerprint]: [ATT/SN512A/SN512A:15/AP3A.240905.015.A2/1788595109:user/release-keys]
+[ro.product.build.id]: [AP3A.240905.015.A2]
+[ro.product.build.no_bionic_page_size_macro]: [true]
+[ro.product.build.tags]: [release-keys]
+[ro.product.build.type]: [user]
+[ro.product.build.version.incremental]: [1788595109]
+[ro.product.build.version.release]: [15]
+[ro.product.build.version.release_or_codename]: [15]
+[ro.product.build.version.sdk]: [35]
+[ro.product.cpu.abi]: [arm64-v8a]
+[ro.product.cpu.abilist]: [arm64-v8a,armeabi-v7a,armeabi]
+[ro.product.cpu.abilist32]: [armeabi-v7a,armeabi]
+[ro.product.cpu.abilist64]: [arm64-v8a]
+[ro.product.cpu.pagesize.max]: [16384]
+[ro.product.device]: [SN512A]
+[ro.product.first_api_level]: [35]
+[ro.product.locale]: [en-US]
+[ro.product.manufacturer]: [Coosea]
+[ro.product.model]: [SN512A]
+[ro.product.name]: [SN512A]
+[ro.product.odm.brand]: [ATT]
+[ro.product.odm.device]: [SN512A]
+[ro.product.odm.manufacturer]: [Coosea]
+[ro.product.odm.model]: [SN512A]
+[ro.product.odm.name]: [SN512A]
+[ro.product.odm_dlkm.brand]: [ATT]
+[ro.product.odm_dlkm.device]: [SN512A]
+[ro.product.odm_dlkm.manufacturer]: [Coosea]
+[ro.product.odm_dlkm.model]: [SN512A]
+[ro.product.odm_dlkm.name]: [SN512A]
+[ro.product.product.brand]: [ATT]
+[ro.product.product.device]: [SN512A]
+[ro.product.product.manufacturer]: [Coosea]
+[ro.product.product.model]: [SN512A]
+[ro.product.product.name]: [SN512A]
+[ro.product.system.brand]: [ATT]
+[ro.product.system.device]: [SN512A]
+[ro.product.system.manufacturer]: [Coosea]
+[ro.product.system.model]: [SN512A]
+[ro.product.system.name]: [SN512A]
+[ro.product.system_dlkm.brand]: [ATT]
+[ro.product.system_dlkm.device]: [SN512A]
+[ro.product.system_dlkm.manufacturer]: [Coosea]
+[ro.product.system_dlkm.model]: [SN512A]
+[ro.product.system_dlkm.name]: [SN512A]
+[ro.product.system_ext.brand]: [ATT]
+[ro.product.system_ext.device]: [SN512A]
+[ro.product.system_ext.manufacturer]: [Coosea]
+[ro.product.system_ext.model]: [SN512A]
+[ro.product.system_ext.name]: [SN512A]
+[ro.product.vendor.brand]: [ATT]
+[ro.product.vendor.device]: [SN512A]
+[ro.product.vendor.manufacturer]: [Coosea]
+[ro.product.vendor.model]: [SN512A]
+[ro.product.vendor.name]: [SN512A]
+[ro.product.vendor_dlkm.brand]: [ATT]
+[ro.product.vendor_dlkm.device]: [SN512A]
+[ro.product.vendor_dlkm.manufacturer]: [Coosea]
+[ro.product.vendor_dlkm.model]: [SN512A]
+[ro.product.vendor_dlkm.name]: [SN512A]
+Linux version 5.15.197-android13-8-00005-g2d8ad9139b89-ab15063902 (build-user@build-host) (Android (8508608, based on r450784e) clang version 14.0.7 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6), LLD 14.0.7) #1 SMP PREEMPT Fri Mar 20 11:14:06 UTC 2026
+processor	: 0
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 1
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 2
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 3
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 4
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 5
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0xd05
+CPU revision	: 0
+
+processor	: 6
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x4
+CPU part	: 0xd0b
+CPU revision	: 0
+
+processor	: 7
+BogoMIPS	: 26.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x4
+CPU part	: 0xd0b
+CPU revision	: 0
+
+MemTotal:        5792172 kB
+MemFree:          167324 kB
+MemAvailable:    2772024 kB
+Buffers:            8360 kB
+Cached:          2331120 kB
+SwapCached:          660 kB
+Active:          1536892 kB
+Inactive:        2605456 kB
+Active(anon):     114848 kB
+Inactive(anon):  1719200 kB
+Active(file):    1422044 kB
+Inactive(file):   886256 kB
+Unevictable:        5412 kB
+Mlocked:            5412 kB
+SwapTotal:       3177768 kB
+SwapFree:        3067944 kB
+Dirty:               124 kB
+Writeback:             0 kB
+AnonPages:       1807704 kB
+Mapped:          1257192 kB
+Shmem:             35452 kB
+KReclaimable:     413096 kB
+Slab:             399512 kB
+SReclaimable:     137100 kB
+SUnreclaim:       262412 kB
+KernelStack:       54080 kB
+ShadowCallStack:   13560 kB
+PageTables:        93984 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     6073852 kB
+Committed_AS:   153674660 kB
+VmallocTotal:   259653632 kB
+VmallocUsed:      174508 kB
+VmallocChunk:          0 kB
+Percpu:             9984 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:         737280 kB
+CmaFree:             104 kB

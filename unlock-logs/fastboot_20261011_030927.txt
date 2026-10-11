@@ -1,0 +1,12 @@
+=== Fastboot Unlock Test ===
+Attempting to boot to bootloader...
+Device rebooting to bootloader...
+
+After booting to bootloader, try:
+fastboot oem unlock
+fastboot flashing unlock
+fastboot flashing get_unlock_ability
+
+NOTE: This will likely fail on AT&T devices
+AT&T devices typically have OEM unlock disabled
+Use MTKClient method instead

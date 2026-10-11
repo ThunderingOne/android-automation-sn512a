@@ -1,0 +1,125 @@
+# Bootloader & Carrier Unlock Guide for SN512A
+# Generated: Sun Oct 11 03:09:45 PDT 2026
+# Device: SN512A00064875
+
+## Device Information
+- Model: SN512A (AT&T Motivate Pro 2 5G / Coosea)
+- Chipset: MediaTek MT6835
+- Android: 15
+- Bootloader: Locked
+- Carrier: AT&T (locked)
+
+## Method 1: Official AT&T Carrier Unlock (Recommended for Multi-Provider)
+1. Visit: https://att.com/deviceunlock
+2. Enter your IMEI (check via *#06#)
+3. Complete the form
+4. Wait for approval (24-48 hours)
+5. Receive 16-digit unlock code
+6. Insert non-AT&T SIM and enter code
+
+**Note**: Requires 60+ days (postpaid) or 6+ months (prepaid) on AT&T network
+
+## Method 2: MTKClient Bootloader Unlock (For Custom ROM/Root)
+1. Download mtkclient: https://github.com/bkerler/mtkclient
+2. Install Python 3.8+ and dependencies
+3. Install MediaTek USB drivers
+4. Boot to BROM mode:
+   - Power off device
+   - Hold Vol Up + Vol Down + Power
+   - Connect via USB
+5. Run commands:
+   - python mtk.py e metadata,userdata,md_udc
+   - python mtk.py da seccfg unlock
+6. Device will be unlocked (all data erased)
+
+**Warning**: Erases all data, voids warranty, may brick device if interrupted
+
+## Method 3: ChimeraTool (Commercial)
+1. Visit: https://chimeratool.com
+2. Create account and purchase credits
+3. Install drivers for MT6835
+4. Use tool to unlock bootloader
+5. Supports: Unlock/Relock, IMEI repair, firmware update
+
+**Cost**: Commercial (requires credits)
+
+## Method 4: Fastboot Unlock (Likely to Fail)
+1. adb reboot bootloader
+2. fastboot oem unlock
+3. fastboot flashing unlock
+4. fastboot flashing get_unlock_ability
+
+**Expected Result**: Will fail on AT&T devices (OEM unlock disabled)
+
+## Semi-Root Options (No Bootloader Unlock Required)
+
+### Shizuku (Recommended)
+1. Download from: https://shizuku.rikka.app/
+2. Install via ADB or direct install
+3. Enable: Settings > Developer Options > Wireless debugging
+4. Provides ADB-like privileges to apps
+
+### ADB over Network
+1. Enable Wireless debugging in Developer Options
+2. Run: adb tcpip 5555
+3. Run: adb connect <device_ip>:5555
+
+## Recommended Approach
+
+### For Multi-Provider (Other Carriers):
+1. **Use official AT&T unlock** (Method 1)
+   - Safest and most reliable
+   - Wait for eligibility requirements
+   - Permanent unlock after approval
+
+### For Custom ROM/Root:
+1. **Use MTKClient** (Method 2)
+   - Most reliable method for MediaTek
+   - Works on MT6835 chipset
+   - Erases all data - backup first!
+   - Void warranty
+
+### For Semi-Root (No Bootloader):
+1. **Use Shizuku** (Recommended)
+   - Install manually
+   - Works on non-rooted device
+   - Provides app-level privileges
+
+## Next Steps
+
+1. **Check device eligibility**:
+   - Check IMEI via *#06#
+   - Verify device meets AT&T requirements
+   - Check AT&T unlock portal
+
+2. **Choose method**:
+   - Official unlock: For multi-provider support
+   - MTKClient: For custom ROM/root
+   - Shizuku: For semi-root without unlock
+
+3. **Backup data** (if using MTKClient):
+   - All data will be erased
+   - Backup photos, contacts, important files
+
+4. **Proceed with chosen method**:
+   - Follow instructions carefully
+   - Don't interrupt the process
+   - Verify completion before proceeding
+
+## Important Notes
+
+- **AT&T devices are carrier-locked**: Cannot use other SIMs without unlock
+- **Bootloader is locked**: Cannot install custom ROM without unlock
+- **MediaTek chipset**: Supports BROM exploit via MTKClient
+- **Warranty**: May be voided by unlocking
+- **Data loss**: Always backup before unlocking
+- **Network compatibility**: Other carriers may have limited bands
+
+## Files Generated
+- Carrier unlock info: carrier_unlock_20261011_030927.txt
+- MTKClient info: mtkclient_20261011_030927.txt
+- ChimeraTool info: chimera_20261011_030927.txt
+- Exploit options: exploits_20261011_030927.txt
+- Semi-root options: semi_root_20261011_030927.txt
+- Fastboot test: fastboot_20261011_030927.txt
+- This guide: unlock_instructions_20261011_030927.txt

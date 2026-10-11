@@ -1,0 +1,1322 @@
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        6a6892d com.google.android.gsf/androidx.profileinstaller.ProfileInstallReceiver filter 27930b0
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        6a6892d com.google.android.gsf/androidx.profileinstaller.ProfileInstallReceiver filter 8824e62
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        6a6892d com.google.android.gsf/androidx.profileinstaller.ProfileInstallReceiver filter 5296bf3
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        6a6892d com.google.android.gsf/androidx.profileinstaller.ProfileInstallReceiver filter 28f8b29
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.sitemaps] (d4202a7):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{66ad30e com.google.android.googleapps.permission.GOOGLE_AUTH.sitemaps}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.panoramio] (6143354):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{37f133c com.google.android.googleapps.permission.GOOGLE_AUTH.panoramio}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.sierrasandbox] (535a2fd):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{885121a com.google.android.googleapps.permission.GOOGLE_AUTH.sierrasandbox}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.ah] (c2dabf2):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{7c82728 com.google.android.googleapps.permission.GOOGLE_AUTH.ah}
+    flags=0x0
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.cl] (9022243):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{3d235e6 com.google.android.googleapps.permission.GOOGLE_AUTH.cl}
+    flags=0x0
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.cp] (f2b30c0):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{10c8dd4 com.google.android.googleapps.permission.GOOGLE_AUTH.cp}
+    flags=0x0
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.ig] (2be71f9):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{77bca72 com.google.android.googleapps.permission.GOOGLE_AUTH.ig}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.lh2] (166953e):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{d8eb340 com.google.android.googleapps.permission.GOOGLE_AUTH.lh2}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.gsf.subscribedfeeds.permission.C2D_MESSAGE] (61a9f9f):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{9b81bbe com.google.android.gsf.subscribedfeeds.permission.C2D_MESSAGE}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.gbase] (9f298ec):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{b4bc36c com.google.android.googleapps.permission.GOOGLE_AUTH.gbase}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.local] (96b34b5):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{bd635ca com.google.android.googleapps.permission.GOOGLE_AUTH.local}
+    flags=0x0
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.orkut] (5b2c74a):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{8e7aa58 com.google.android.googleapps.permission.GOOGLE_AUTH.orkut}
+    flags=0x0
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.print] (31396bb):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{309e496 com.google.android.googleapps.permission.GOOGLE_AUTH.print}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.OTHER_SERVICES] (6e657d8):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{9591404 com.google.android.googleapps.permission.GOOGLE_AUTH.OTHER_SERVICES}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.xmpp.permission.USE_XMPP_ENDPOINT] (7e76731):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{1f7b422 com.google.android.xmpp.permission.USE_XMPP_ENDPOINT}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.doraemon] (fde0e16):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{6556c70 com.google.android.googleapps.permission.GOOGLE_AUTH.doraemon}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.writely] (4dae397):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f00f06e com.google.android.googleapps.permission.GOOGLE_AUTH.writely}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.notebook] (551984):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{d7cdf9c com.google.android.googleapps.permission.GOOGLE_AUTH.notebook}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH] (21a456d):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{34fa57a com.google.android.googleapps.permission.GOOGLE_AUTH}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES] (5a4f5a2):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{4465988 com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.providers.settings.permission.READ_GSETTINGS] (7602233):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{ea29f46 com.google.android.providers.settings.permission.READ_GSETTINGS}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.gtalkservice.permission.SEND_HEARTBEAT] (4cc49f0):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{eab8634 com.google.android.gtalkservice.permission.SEND_HEARTBEAT}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.knol] (922cb69):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{bd969d2 com.google.android.googleapps.permission.GOOGLE_AUTH.knol}
+    flags=0x0
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.mail] (a00c9ee):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{494d1a0 com.google.android.googleapps.permission.GOOGLE_AUTH.mail}
+    flags=0x0
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.news] (bf0ae8f):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{240511e com.google.android.googleapps.permission.GOOGLE_AUTH.news}
+    flags=0x0
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.talk] (c44151c):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{20567cc com.google.android.googleapps.permission.GOOGLE_AUTH.talk}
+    flags=0x0
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.wifi] (713b525):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f9c612a com.google.android.googleapps.permission.GOOGLE_AUTH.wifi}
+    flags=0x0
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.wise] (43396fa):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{e0734b8 com.google.android.googleapps.permission.GOOGLE_AUTH.wise}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser] (153a4ab):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{6f765f6 com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.androidsecure] (40b6708):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{456e464 com.google.android.googleapps.permission.GOOGLE_AUTH.androidsecure}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.permission.BROADCAST_DATA_MESSAGE] (a6f7ea1):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{2beb82 com.google.android.permission.BROADCAST_DATA_MESSAGE}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.grandcentral] (b9428c6):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{dcfe2d0 com.google.android.googleapps.permission.GOOGLE_AUTH.grandcentral}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.jotspot] (1a5e087):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{4313dce com.google.android.googleapps.permission.GOOGLE_AUTH.jotspot}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.xmpp.permission.BROADCAST] (d73ebb4):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{3985bfc com.google.android.xmpp.permission.BROADCAST}
+    flags=0x0
+  Permission [com.google.android.xmpp.permission.SEND_RECEIVE] (d6463dd):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{22768da com.google.android.xmpp.permission.SEND_RECEIVE}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.goanna_mobile] (41a0b52):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{90d3be8 com.google.android.googleapps.permission.GOOGLE_AUTH.goanna_mobile}
+    flags=0x0
+
+Permissions:
+  Permission [does.not.matter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (1f5fe23):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{92338a6 does.not.matter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.xmpp.permission.XMPP_ENDPOINT_BROADCAST] (b3e0f20):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{86e2e94 com.google.android.xmpp.permission.XMPP_ENDPOINT_BROADCAST}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.adsense] (4c860d9):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{2ba3932 com.google.android.googleapps.permission.GOOGLE_AUTH.adsense}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.adwords] (7a98a9e):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{e49a000 com.google.android.googleapps.permission.GOOGLE_AUTH.adwords}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.youtube] (fa0597f):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{a4eb67e com.google.android.googleapps.permission.GOOGLE_AUTH.youtube}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.android] (9c4fd4c):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{fa8bc2c com.google.android.googleapps.permission.GOOGLE_AUTH.android}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.finance] (2d53195):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{d1bbc8a com.google.android.googleapps.permission.GOOGLE_AUTH.finance}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.dodgeball] (81fb2aa):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{6fb6f18 com.google.android.googleapps.permission.GOOGLE_AUTH.dodgeball}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.gsf.permission.C2D_MESSAGE] (76b0e9b):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f011756 com.google.android.gsf.permission.C2D_MESSAGE}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.health] (deaa238):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{3c464c4 com.google.android.googleapps.permission.GOOGLE_AUTH.health}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.mobile] (9a45211):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f52e2 com.google.android.googleapps.permission.GOOGLE_AUTH.mobile}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.reader] (61e4f76):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{9050930 com.google.android.googleapps.permission.GOOGLE_AUTH.reader}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.sierra] (261f977):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{ed3bb2e com.google.android.googleapps.permission.GOOGLE_AUTH.sierra}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.speech] (6c3a9e4):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{669885c com.google.android.googleapps.permission.GOOGLE_AUTH.speech}
+    flags=0x0
+
+Permissions:
+  Permission [androidx.legacy.coreui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (96afe4d):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{3645c3a androidx.legacy.coreui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.geowiki] (897ed02):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{834ce48 com.google.android.googleapps.permission.GOOGLE_AUTH.geowiki}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.gsf.permission.CONNECTION] (472b613):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{f2c0206 com.google.android.gsf.permission.CONNECTION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.blogger] (e038050):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{9ec86f4 com.google.android.googleapps.permission.GOOGLE_AUTH.blogger}
+    flags=0x0
+  Permission [android.server.checkin.CHECKIN.permission.C2D_MESSAGE] (6763249):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{d763892 android.server.checkin.CHECKIN.permission.C2D_MESSAGE}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.speechpersonalization] (11bd74e):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{7c51e60 com.google.android.googleapps.permission.GOOGLE_AUTH.speechpersonalization}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.gsf.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (8c8a06f):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{bb4bde com.google.android.gsf.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.groups2] (328517c):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{acdc08c com.google.android.googleapps.permission.GOOGLE_AUTH.groups2}
+    flags=0x0
+
+Permissions:
+  Permission [androidx.legacy.coreutils.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (2e6aa05):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{8ac47ea androidx.legacy.coreutils.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Permissions:
+  Permission [com.google.android.googleapps.permission.GOOGLE_AUTH.sierraqa] (8e21a5a):
+    sourcePackage=com.google.android.gsf
+    uid=10119 gids=[] type=0 prot=signature
+    perm=PermissionInfo{bdc5978 com.google.android.googleapps.permission.GOOGLE_AUTH.sierraqa}
+    flags=0x0
+
+Registered ContentProviders:
+  com.google.android.gsf/.settings.GoogleSettingsProvider:
+    Provider{ae4d851 com.google.android.gsf/.settings.GoogleSettingsProvider}
+  com.google.android.gsf/.gservices.GservicesProvider:
+    Provider{cfef8b6 com.google.android.gsf/.gservices.GservicesProvider}
+  com.google.android.gsf/androidx.startup.InitializationProvider:
+    Provider{b1b89b7 com.google.android.gsf/androidx.startup.InitializationProvider}
+  com.google.android.gsf/com.android.car.ui.core.SearchResultsProvider:
+    Provider{9399524 com.google.android.gsf/com.android.car.ui.core.SearchResultsProvider}
+  com.google.android.gsf/com.android.car.ui.core.CarUiInstaller:
+    Provider{6cda88d com.google.android.gsf/com.android.car.ui.core.CarUiInstaller}
+
+ContentProvider Authorities:
+  [com.google.android.gmscore.providersettings.do.not.use]:
+    Provider{ae4d851 com.google.android.gsf/.settings.GoogleSettingsProvider}
+      applicationInfo=ApplicationInfo{7e8d48b com.google.android.gsf}
+  [does.not.matter.SearchResultsProvider]:
+    Provider{9399524 com.google.android.gsf/com.android.car.ui.core.SearchResultsProvider}
+      applicationInfo=ApplicationInfo{d670968 com.google.android.gsf}
+  [does.not.matter.CarUiInstaller]:
+    Provider{6cda88d com.google.android.gsf/com.android.car.ui.core.CarUiInstaller}
+      applicationInfo=ApplicationInfo{82ce181 com.google.android.gsf}
+  [com.google.android.gsf.androidx-startup]:
+    Provider{b1b89b7 com.google.android.gsf/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{2978226 com.google.android.gsf}
+  [com.google.android.gms.gservices.provider.do.not.use]:
+    Provider{cfef8b6 com.google.android.gsf/.gservices.GservicesProvider}
+      applicationInfo=ApplicationInfo{38e2e67 com.google.android.gsf}
+
+Key Set Manager:
+  [com.google.android.gsf]
+      Signing KeySets: 33
+
+Packages:
+  Package [com.google.android.gsf] (6be2a3c):
+    appId=10119
+    sharedUser=SharedUserSetting{49bf8af com.google.uid.shared/10119}
+    pkg=Package{28864bc com.google.android.gsf}
+    codePath=/system_ext/priv-app/GoogleServicesFramework
+    resourcePath=/system_ext/priv-app/GoogleServicesFramework
+    legacyNativeLibraryDir=/system_ext/priv-app/GoogleServicesFramework/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=35 minSdk=35 targetSdk=35
+    minExtensionVersions=[]
+    versionName=15-14202993
+    hiddenApiEnforcementPolicy=0
+    usesNonSdkApi=true
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ SYSTEM ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED SYSTEM_EXT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=true
+    queriesIntents=[Intent { act=android.view.InputMethod }]
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system_ext/framework/androidx.window.extensions.jar
+      /system_ext/framework/androidx.window.sidecar.jar
+    timeStamp=2008-12-31 19:00:00
+    lastUpdateTime=2026-10-11 01:06:26
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=null
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{82c5c45 version:3, signatures:[98deb0ca], past signatures:[e3ca78d8 flags: 17, 98deb0ca flags: 17]}
+    installPermissionsFixed=false
+    pkgFlags=[ SYSTEM ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVILEGED SYSTEM_EXT PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.google.android.googleapps.permission.GOOGLE_AUTH: prot=normal
+      com.google.android.googleapps.permission.GOOGLE_AUTH: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.OTHER_SERVICES: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.mail: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.cl: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.android: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.androidsecure: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.sierra: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.sierraqa: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.sierrasandbox: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.youtube: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.talk: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.ig: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.lh2: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.mobile: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.cp: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.adsense: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.adwords: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.blogger: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.dodgeball: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.gbase: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.groups2: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.health: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.jotspot: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.knol: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.news: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.orkut: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.print: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.sitemaps: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.wifi: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.finance: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.local: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.ah: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.notebook: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.writely: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.wise: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.grandcentral: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.speechpersonalization: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.speech: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.goanna_mobile: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.panoramio: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.reader: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.geowiki: prot=signature
+      com.google.android.googleapps.permission.GOOGLE_AUTH.doraemon: prot=signature
+      com.google.android.gtalkservice.permission.GTALK_SERVICE: prot=signature
+      com.google.android.gtalkservice.permission.SEND_HEARTBEAT: prot=signature|privileged
+      com.google.android.permission.BROADCAST_DATA_MESSAGE: prot=signature|privileged
+      com.google.android.c2dm.permission.SEND: prot=signature|privileged
+      com.google.android.c2dm.permission.RECEIVE: prot=normal
+      com.google.android.xmpp.permission.BROADCAST: prot=signature|privileged
+      com.google.android.xmpp.permission.SEND_RECEIVE: prot=signature
+      com.google.android.xmpp.permission.XMPP_ENDPOINT_BROADCAST: prot=signature|privileged
+      com.google.android.xmpp.permission.USE_XMPP_ENDPOINT: prot=signature
+      com.android.vending.INTENT_VENDING_ONLY: prot=signature
+      com.google.android.providers.settings.permission.READ_GSETTINGS: prot=signature
+      com.google.android.providers.settings.permission.WRITE_GSETTINGS: prot=signature
+      com.google.android.providers.gsf.permission.READ_GSERVICES: prot=normal
+      com.google.android.providers.gsf.permission.WRITE_GSERVICES: prot=signature
+      com.google.android.gsf.subscribedfeeds.permission.C2D_MESSAGE: prot=signature
+      com.google.android.gsf.permission.C2D_MESSAGE: prot=signature
+      com.google.android.gsf.permission.CONNECTION: prot=signature
+      android.server.checkin.CHECKIN.permission.C2D_MESSAGE: prot=signature
+      does.not.matter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      com.google.android.gsf.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      androidx.legacy.coreutils.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+      androidx.legacy.coreui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      android.permission.ACCESS_CACHE_FILESYSTEM
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+      android.permission.WRITE_SETTINGS
+      android.permission.RECOVERY
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.USE_CREDENTIALS
+      android.permission.RECEIVE_DATA_ACTIVITY_CHANGE
+      com.google.android.providers.gsf.permission.READ_GSERVICES
+      android.permission.WRITE_GSERVICES
+      android.permission.MANAGE_ACCOUNTS
+      android.permission.CHANGE_COMPONENT_ENABLED_STATE
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.MASTER_CLEAR
+      android.permission.PERSISTENT_ACTIVITY
+      android.permission.WRITE_SYNC_SETTINGS
+      com.google.android.providers.gsf.permission.WRITE_GSERVICES
+      android.permission.RECEIVE_BOOT_COMPLETED
+      com.google.android.providers.settings.permission.READ_GSETTINGS
+      com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD
+      android.permission.AUTHENTICATE_ACCOUNTS
+      android.permission.INTERNET
+      com.android.vending.INTENT_VENDING_ONLY
+      android.permission.UPDATE_DEVICE_STATS
+      com.google.android.c2dm.permission.SEND
+      android.permission.WRITE_SECURE_SETTINGS
+      com.android.vending.TOS_ACKED
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_DOWNLOAD_MANAGER
+      android.permission.BROADCAST_STICKY
+      android.permission.WRITE_CONTACTS
+      android.permission.SET_TIME
+      does.not.matter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      com.google.android.providers.settings.permission.WRITE_GSETTINGS
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.MANAGE_USERS
+      com.android.vending.billing.BILLING_ACCOUNT_SERVICE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.BACKUP
+      android.permission.INTERACT_ACROSS_USERS
+      android.permission.READ_DREAM_STATE
+      android.permission.READ_NETWORK_USAGE_HISTORY
+      android.permission.READ_SYNC_STATS
+      android.permission.REBOOT
+      com.android.chrome.TOS_ACKED
+      android.permission.READ_SYNC_SETTINGS
+      android.permission.GET_ACCOUNTS
+      androidx.legacy.coreui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.VIBRATE
+      android.permission.INVOKE_CARRIER_SETUP
+      com.google.android.googleapps.permission.GOOGLE_MAIL_SWITCH
+      com.google.android.gsf.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.STATUS_BAR
+      android.permission.DUMP
+      androidx.legacy.coreutils.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      android.permission.READ_DEVICE_CONFIG
+      android.permission.WAKE_LOCK
+      android.permission.READ_CONTACTS
+      android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED
+      com.android.vending.billing.ADD_CREDIT_CARD
+      com.google.android.gtalkservice.permission.GTALK_SERVICE
+    install permissions:
+      com.google.android.gms.auth.api.phone.permission.SEND: granted=true
+      android.permission.REAL_GET_TASKS: granted=true
+      android.permission.ACCESS_CACHE_FILESYSTEM: granted=true
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      android.permission.INTENT_FILTER_VERIFICATION_AGENT: granted=true
+      android.permission.PROVIDE_RESOLVER_RANKER_SERVICE: granted=true
+      com.google.android.gms.trustagent.framework.model.DATA_CHANGE_NOTIFICATION: granted=true
+      android.permission.PROVIDE_REMOTE_CREDENTIALS: granted=true
+      android.permission.WRITE_SETTINGS: granted=true
+      com.google.android.vending.verifier.ACCESS_VERIFIER: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.ACCESS_FPS_COUNTER: granted=true
+      com.google.android.gms.matchstick.permission.BROADCAST_LIGHTER_WEB_INFO: granted=true
+      android.permission.RECOVERY: granted=true
+      com.google.android.gms.permission.APPINDEXING: granted=true
+      android.permission.LOCATION_BYPASS: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MANAGE_FACTORY_RESET_PROTECTION: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      android.permission.ACTIVITY_EMBEDDING: granted=true
+      android.permission.MODIFY_AUDIO_ROUTING: granted=true
+      android.permission.THREAD_NETWORK_PRIVILEGED: granted=true
+      android.permission.GET_APP_OPS_STATS: granted=true
+      android.permission.RECEIVE_DATA_ACTIVITY_CHANGE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.CONTROL_KEYGUARD_SECURE_NOTIFICATIONS: granted=true
+      com.google.android.setupwizard.WRITE_DEVICE_ORIGIN: granted=true
+      com.google.android.gms.permission.ACCESS_MULTIPACKAGE_COMPONENT: granted=true
+      android.permission.READ_WIFI_CREDENTIAL: granted=true
+      android.permission.WRITE_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      com.android.vending.APP_ERRORS_SERVICE: granted=true
+      android.permission.START_TASKS_FROM_RECENTS: granted=true
+      android.permission.NFC_TRANSACTION_EVENT: granted=true
+      com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE: granted=true
+      android.permission.MANAGE_WIFI_INTERFACES: granted=true
+      com.google.android.gms.auth.authzen.permission.DEVICE_SYNC_FINISHED: granted=true
+      android.permission.PROVIDE_TRUST_AGENT: granted=true
+      com.google.android.gms.chromesync.permission.CONTENT_PROVIDER_ACCESS: granted=true
+      android.permission.MANAGE_SOUND_TRIGGER: granted=true
+      android.permission.INSTALL_LOCATION_TIME_ZONE_PROVIDER_SERVICE: granted=true
+      android.permission.MANAGE_VOICE_KEYPHRASES: granted=true
+      android.permission.CHANGE_COMPONENT_ENABLED_STATE: granted=true
+      com.google.android.gms.permission.CHECKIN_NOW: granted=true
+      android.permission.NFC: granted=true
+      android.permission.MANAGE_WIFI_NETWORK_SELECTION: granted=true
+      com.google.android.gms.learning.permission.LAUNCH_IN_APP_PROXY: granted=true
+      android.permission.LOCK_DEVICE: granted=true
+      com.google.android.gms.permission.SEND_ANDROID_PAY_DATA: granted=true
+      android.permission.SET_BIOMETRIC_DIALOG_ADVANCED: granted=true
+      com.google.android.apps.now.OPT_IN_WIZARD: granted=true
+      com.google.android.gms.auth.authzen.permission.GCM_DEVICE_PROXIMITY: granted=true
+      android.permission.CALL_PRIVILEGED: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.MASTER_CLEAR: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.PERSISTENT_ACTIVITY: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.WRITE_GSERVICES: granted=true
+      android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.SUBSCRIBED_FEEDS_READ: granted=true
+      com.google.android.gms.permission.NEARBY_START_DISCOVERER: granted=true
+      com.google.android.gms.auth.permission.POST_SIGN_IN_ACCOUNT: granted=true
+      android.permission.UPDATE_FONTS: granted=true
+      android.permission.HIGH_SAMPLING_RATE_SENSORS: granted=true
+      com.google.android.providers.settings.permission.READ_GSETTINGS: granted=true
+      android.permission.ACCESS_ADSERVICES_STATE: granted=true
+      android.permission.MANAGE_GAME_ACTIVITY: granted=true
+      com.google.android.gms.cloudsave.BIND_EVENT_BROADCAST: granted=true
+      android.permission.SET_TIME_ZONE: granted=true
+      android.permission.MANAGE_SUBSCRIPTION_PLANS: granted=true
+      com.google.android.googlequicksearchbox.permission.PAUSE_HOTWORD: granted=true
+      com.google.android.gms.permission.REPORT_TAP: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.RESET_PASSWORD: granted=true
+      android.permission.CAPTURE_AUDIO_HOTWORD: granted=true
+      android.permission.CONTROL_DISPLAY_SATURATION: granted=true
+      com.android.vending.setup.PLAY_SETUP_SERVICE: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.SUBSCRIBED_FEEDS_WRITE: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.INTENT_VENDING_ONLY: granted=true
+      com.google.android.gms.permission.C2D_MESSAGE: granted=true
+      com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.google.android.gms.presencemanager.permission.PRESENCE_MANAGER_UPDATE_BROADCAST: granted=true
+      com.google.android.gms.nearby.exposurenotification.EXPOSURE_CALLBACK: granted=true
+      com.google.android.gms.permission.PHENOTYPE_OVERRIDE_FLAGS: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.MANAGE_TIME_AND_ZONE_DETECTION: granted=true
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND: granted=true
+      android.permission.READ_NEARBY_STREAMING_POLICY: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.UPDATE_DEVICE_STATS: granted=true
+      com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION: granted=true
+      com.google.android.gms.magictether.permission.CONNECTED_HOST_CHANGED: granted=true
+      com.google.android.gms.permission.CONTACTS_SYNC_DELEGATION: granted=true
+      android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS: granted=true
+      com.google.android.gms.permission.BIOAUTH_CONSENT: granted=true
+      android.permission.RECOVER_KEYSTORE: granted=true
+      android.permission.WRITE_DEVICE_CONFIG: granted=true
+      android.permission.SEND_SAFETY_CENTER_UPDATE: granted=true
+      com.google.android.gms.trustagent.permission.TRUSTAGENT_STATE: granted=true
+      android.permission.REQUEST_COMPANION_SELF_MANAGED: granted=true
+      android.permission.SETUP_FSVERITY: granted=true
+      android.permission.EMERGENCY_INSTALL_PACKAGES: granted=true
+      com.google.android.gms.dck.permission.DIGITAL_KEY_PRIVILEGED: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.google.android.c2dm.permission.SEND: granted=true
+      android.permission.ACCESS_CONTEXT_HUB: granted=true
+      android.permission.UWB_PRIVILEGED: granted=true
+      android.permission.MANAGE_USB: granted=true
+      android.permission.ALLOCATE_AGGRESSIVE: granted=true
+      com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST: granted=true
+      com.google.android.gms.permission.INTERNAL_BROADCAST: granted=true
+      com.google.android.gms.security.permission.BANK_SCAM_WARNING: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.PREPARE_FACTORY_RESET: granted=true
+      android.permission.WRITE_PROFILE: granted=true
+      android.permission.TETHER_PRIVILEGED: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      com.android.vending.TOS_ACKED: granted=true
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED: granted=true
+      android.permission.CAPTURE_AUDIO_OUTPUT: granted=true
+      com.google.android.finsky.permission.INSTANT_APP_STATE: granted=true
+      com.google.android.gms.auth.proximity.permission.SMS_CONNECT_SETUP_REQUESTED: granted=true
+      android.permission.ACCESS_VIBRATOR_STATE: granted=true
+      android.permission.SATELLITE_COMMUNICATION: granted=true
+      android.permission.HIDE_OVERLAY_WINDOWS: granted=true
+      android.permission.SCORE_NETWORKS: granted=true
+      android.permission.LOG_COMPAT_CHANGE: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      com.google.android.gms.permission.wearable.BUGREPORT_USER_CONSENT: granted=true
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      com.google.android.gms.permission.GOOGLE_PAY: granted=true
+      android.permission.ACCESS_DOWNLOAD_MANAGER: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      com.google.android.gms.smartdevice.permission.NOTIFY_QUICK_START_STATUS: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.permission.SET_TIME: granted=true
+      does.not.matter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.google.android.providers.settings.permission.WRITE_GSETTINGS: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.MODIFY_DAY_NIGHT_MODE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      com.android.vending.billing.BILLING_ACCOUNT_SERVICE: granted=true
+      android.permission.READ_DROPBOX_DATA: granted=true
+      com.google.android.gms.contextmanager.CONTEXT_MANAGER_RESTARTED_BROADCAST: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.RENOUNCE_PERMISSIONS: granted=true
+      android.permission.PROVIDE_DEFAULT_ENABLED_CREDENTIAL_SERVICE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DOMAIN_VERIFICATION_AGENT: granted=true
+      android.permission.MODIFY_DEFAULT_AUDIO_EFFECTS: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      android.permission.BACKUP: granted=true
+      com.google.android.gms.carsetup.DRIVING_MODE_MANAGER: granted=true
+      android.permission.USER_ACTIVITY: granted=true
+      android.permission.LOCAL_MAC_ADDRESS: granted=true
+      com.google.android.gms.permission.SHOW_PAYMENT_CARD_DETAILS: granted=true
+      com.google.android.gms.findmydevice.spot.permission.DEVICE_CHANGES: granted=true
+      android.permission.READ_LOGS: granted=true
+      com.google.android.gms.magictether.permission.SCANNED_DEVICE: granted=true
+      com.google.android.gms.auth.cryptauth.permission.CABLEV2_SERVER_LINK: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.CREDENTIAL_MANAGER_SET_ORIGIN: granted=true
+      android.permission.ACCESS_NETWORK_CONDITIONS: granted=true
+      android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS: granted=true
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE: granted=true
+      android.permission.READ_DREAM_STATE: granted=true
+      android.permission.MANAGE_ROLLBACKS: granted=true
+      com.google.android.gms.permission.BIND_PAYMENTS_CALLBACK_SERVICE: granted=true
+      android.permission.READ_NETWORK_USAGE_HISTORY: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      com.google.android.gms.locationsharingreporter.periodic.STATUS_UPDATE: granted=true
+      android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS: granted=true
+      android.permission.SCHEDULE_PRIORITIZED_ALARM: granted=true
+      android.permission.REQUEST_COMPANION_PROFILE_COMPUTER: granted=true
+      com.google.android.gms.permission.GRANT_WALLPAPER_PERMISSIONS: granted=true
+      android.permission.ACCESS_BROADCAST_RESPONSE_STATS: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION: granted=true
+      android.permission.REBOOT: granted=true
+      com.google.android.finsky.permission.DEVELOPER_GROUP_ID_INFO: granted=true
+      com.google.android.gms.chimera.permission.CONFIG_CHANGE: granted=true
+      com.google.android.gms.auth.permission.FACE_UNLOCK: granted=true
+      android.permission.CHECK_REMOTE_LOCKSCREEN: granted=true
+      com.google.android.setupwizard.pairing.NEARBY_BACKUP_SERVICE: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      com.google.android.gms.auth.permission.GOOGLE_ACCOUNT_CHANGE: granted=true
+      com.google.android.gms.trustagent.framework.model.DATA_ACCESS: granted=true
+      android.permission.REMOTE_DISPLAY_PROVIDER: granted=true
+      android.permission.SUBSTITUTE_SHARE_TARGET_APP_NAME_AND_ICON: granted=true
+      android.permission.MANAGE_GAME_MODE: granted=true
+      com.android.chrome.TOS_ACKED: granted=true
+      com.android.vending.p2p.APP_INSTALL_API: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      com.google.android.gms.permission.SHOW_TRANSACTION_RECEIPT: granted=true
+      android.permission.READ_COMPAT_CHANGE_CONFIG: granted=true
+      android.permission.OVERRIDE_WIFI_CONFIG: granted=true
+      android.permission.FORCE_STOP_PACKAGES: granted=true
+      android.permission.COMPANION_APPROVE_WIFI_CONNECTIONS: granted=true
+      androidx.legacy.coreui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS: granted=true
+      android.permission.VIBRATE: granted=true
+      com.google.android.gms.permission.ACCESS_NEARBY_SHARE_API: granted=true
+      android.permission.SET_LOW_POWER_STANDBY_PORTS: granted=true
+      android.permission.INVOKE_CARRIER_SETUP: granted=true
+      com.google.android.gms.time.permission.SEND_TRUSTED_TIME_SIGNAL: granted=true
+      android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST: granted=true
+      android.permission.WRITE_VERIFICATION_STATE_E2EE_CONTACT_KEYS: granted=true
+      com.google.android.gms.permission.SAFETY_NET: granted=true
+      com.google.android.gms.vehicle.permission.SHARED_AUTO_SENSOR_DATA: granted=true
+      com.google.android.finsky.permission.GEARHEAD_SERVICE: granted=true
+      android.permission.UPDATE_PRIVILEGED_AD_ID: granted=true
+      com.google.android.gsf.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.google.android.gms.googlehelp.LAUNCH_SUPPORT_SCREENSHARE: granted=true
+      android.permission.MODIFY_NETWORK_ACCOUNTING: granted=true
+      com.google.android.gms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.google.android.gms.common.internal.SHARED_PREFERENCES_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      com.google.android.gms.permission.SHOW_WARM_WELCOME_TAPANDPAY_APP: granted=true
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER: granted=true
+      android.permission.CALL_AUDIO_INTERCEPTION: granted=true
+      android.permission.NOTIFY_PENDING_SYSTEM_UPDATE: granted=true
+      android.permission.DISPATCH_PROVISIONING_MESSAGE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.BROADCAST_TO_GOOGLEHELP: granted=true
+      com.google.android.finsky.permission.ACCESS_INSTANT_APP_NOTIFICATION_ENFORCEMENT: granted=true
+      android.permission.TURN_SCREEN_ON: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.READ_VALUABLES_IMAGES: granted=true
+      android.permission.MODIFY_ADSERVICES_STATE: granted=true
+      com.google.android.gms.dtdi.permission.START_COMPONENTS: granted=true
+      com.google.android.gms.auth.authzen.permission.KEY_REGISTRATION_FINISHED: granted=true
+      com.google.android.gms.home.matter.BIND_MATTER_COMMISSIONING_SERVICE: granted=true
+      com.google.android.gms.magictether.permission.CLIENT_TETHERING_PREFERENCE_CHANGED: granted=true
+      android.permission.CONTROL_INCALL_EXPERIENCE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.STATUS_BAR: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.SEND_SMS_NO_CONFIRMATION: granted=true
+      com.google.android.gms.DRIVE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.DUMP: granted=true
+      androidx.legacy.coreutils.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      com.google.android.gms.permission.REQUEST_SCREEN_LOCK_COMPLEXITY: granted=true
+      android.permission.LOCATION_HARDWARE: granted=true
+      com.google.android.gms.people.permission.contactssync.BACKUP_SYNC_STATE_UPDATE_BROADCAST: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      com.google.android.gms.auth.cryptauth.permission.KEY_CHANGE: granted=true
+      android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED: granted=true
+      android.permission.CONFIGURE_FACTORY_RESET_PROTECTION: granted=true
+      com.google.android.gms.permission.GROWTH: granted=true
+      android.permission.UPDATE_APP_OPS_STATS: granted=true
+      android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS: granted=true
+      android.permission.READ_OEM_UNLOCK_STATE: granted=true
+      com.android.vending.billing.ADD_CREDIT_CARD: granted=true
+      com.google.android.setupwizard.SETUP_PROGRESS_SERVICE: granted=true
+      android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS: granted=true
+      com.google.android.gtalkservice.permission.GTALK_SERVICE: granted=true
+      android.permission.MEDIA_CONTENT_CONTROL: granted=true
+      com.google.android.gms.magictether.permission.DISABLE_SOFT_AP: granted=true
+      com.google.android.gms.chromesync.permission.METADATA_UPDATED: granted=true
+    User 0: ceDataInode=3232 deDataInode=1635 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=1 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.google.android.gsf
+      firstInstallTime=2026-10-11 01:06:26
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NotesRoleEnabled/NotesRoleEnabledOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-ViQH.frro
+        /data/resource-cache/com.android.systemui-accent-2qZs.frro
+        /data/resource-cache/com.android.systemui-dynamic-DrCT.frro
+      legacy overlay paths:
+        /product/overlay/NotesRoleEnabled/NotesRoleEnabledOverlay.apk
+      lastDisabledCaller: shell:1000
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  forceQueryable:
+    [com.google.android.gsf,com.google.android.gms]
+  queries via package name:
+    [com.google.android.gsf,com.google.android.gms]:
+      com.google.android.apps.walletnfcrel
+  queries via component:
+    [com.google.android.gsf,com.google.android.gms]:
+      com.google.android.googlequicksearchbox
+      com.google.android.inputmethod.latin
+  queryable via interaction:
+    User 0:
+      [com.android.keychain,com.android.localtransport,com.android.DeviceAsWebcam,com.android.providers.settings,com.android.inputdevices,android,com.android.location.fused,com.android.settings,com.mediatek.omacp,com.mediatek.voicecommand,com.mediatek.location.lppe.main,com.pri.factorytest,com.android.dynsystem,com.android.server.telecom,com.pri.autotest,com.mediatek,com.mediatek.simprocessor,com.tools.logkit]:
+        [com.google.android.gsf,com.google.android.gms]
+      [com.android.providers.contactkeys,com.android.calllogbackup,com.android.providers.userdictionary,com.android.providers.contacts,com.android.providers.blockednumber]:
+        [com.google.android.gsf,com.google.android.gms]
+      com.android.vending:
+        [com.google.android.gsf,com.google.android.gms]
+      [com.google.android.gsf,com.google.android.gms]:
+        [com.android.keychain,com.android.localtransport,com.android.DeviceAsWebcam,com.android.providers.settings,com.android.inputdevices,android,com.android.location.fused,com.android.settings,com.mediatek.omacp,com.mediatek.voicecommand,com.mediatek.location.lppe.main,com.pri.factorytest,com.android.dynsystem,com.android.server.telecom,com.pri.autotest,com.mediatek,com.mediatek.simprocessor,com.tools.logkit]
+        com.android.nfc
+        [com.android.providers.contactkeys,com.android.calllogbackup,com.android.providers.userdictionary,com.android.providers.contacts,com.android.providers.blockednumber]
+        com.att.dh
+        com.aura.oobe.att
+        com.aura.jet.att
+        com.google.android.euicc
+        com.google.android.apps.turbo
+        com.att.personalcloud
+        com.google.android.apps.googleassistant
+        com.att.mobile.android.vvm
+        com.google.android.carrier
+        com.google.android.projection.gearhead
+        com.google.android.configupdater
+        com.google.android.apps.carrier.carrierwifi
+        com.google.android.partnersetup
+        com.google.android.apps.nbu.files
+        com.google.android.apps.messaging
+        com.android.vending
+        com.google.android.apps.wellbeing
+        com.google.android.googlequicksearchbox
+        com.google.android.deskclock
+        com.google.android.calendar
+        com.android.chrome
+        com.google.android.apps.docs
+        com.google.android.apps.walletnfcrel
+        com.google.android.apps.chromecast.app
+        com.google.android.gm
+        com.google.android.inputmethod.latin
+        com.google.android.tts
+        com.google.android.accessibility.switchaccess
+        com.google.android.apps.maps
+        com.google.android.webview
+        com.google.android.apps.tachyon
+        com.google.android.videos
+        com.google.android.apps.photos
+        com.google.android.youtube
+        com.google.android.marvin.talkback
+        com.att.iqi
+        com.android.systemui
+        com.google.android.setupwizard
+      com.google.android.apps.wellbeing:
+        [com.google.android.gsf,com.google.android.gms]
+      com.google.android.googlequicksearchbox:
+        [com.google.android.gsf,com.google.android.gms]
+      com.android.chrome:
+        [com.google.android.gsf,com.google.android.gms]
+      com.google.android.inputmethod.latin:
+        [com.google.android.gsf,com.google.android.gms]
+      com.google.android.setupwizard:
+        [com.google.android.gsf,com.google.android.gms]
+  queryable via uses-library:
+
+Shared users:
+  SharedUser [com.google.uid.shared] (49bf8af):
+    appId=10119
+    Packages
+      PackageSetting{6be2a3c com.google.android.gsf/10119}
+      PackageSetting{90c85ca com.google.android.gms/10119}
+    install permissions:
+      com.google.android.gms.auth.api.phone.permission.SEND: granted=true
+      android.permission.REAL_GET_TASKS: granted=true
+      android.permission.ACCESS_CACHE_FILESYSTEM: granted=true
+      android.permission.DOWNLOAD_WITHOUT_NOTIFICATION: granted=true
+      android.permission.INTENT_FILTER_VERIFICATION_AGENT: granted=true
+      android.permission.PROVIDE_RESOLVER_RANKER_SERVICE: granted=true
+      com.google.android.gms.trustagent.framework.model.DATA_CHANGE_NOTIFICATION: granted=true
+      android.permission.PROVIDE_REMOTE_CREDENTIALS: granted=true
+      android.permission.WRITE_SETTINGS: granted=true
+      com.google.android.vending.verifier.ACCESS_VERIFIER: granted=true
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      android.permission.ACCESS_FPS_COUNTER: granted=true
+      com.google.android.gms.matchstick.permission.BROADCAST_LIGHTER_WEB_INFO: granted=true
+      android.permission.RECOVERY: granted=true
+      com.google.android.gms.permission.APPINDEXING: granted=true
+      android.permission.LOCATION_BYPASS: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.USE_CREDENTIALS: granted=true
+      android.permission.MANAGE_FACTORY_RESET_PROTECTION: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.ACCESS_NOTIFICATION_POLICY: granted=true
+      android.permission.ACTIVITY_EMBEDDING: granted=true
+      android.permission.MODIFY_AUDIO_ROUTING: granted=true
+      android.permission.THREAD_NETWORK_PRIVILEGED: granted=true
+      android.permission.GET_APP_OPS_STATS: granted=true
+      android.permission.RECEIVE_DATA_ACTIVITY_CHANGE: granted=true
+      com.google.android.providers.gsf.permission.READ_GSERVICES: granted=true
+      android.permission.CONTROL_KEYGUARD_SECURE_NOTIFICATIONS: granted=true
+      com.google.android.setupwizard.WRITE_DEVICE_ORIGIN: granted=true
+      com.google.android.gms.permission.ACCESS_MULTIPACKAGE_COMPONENT: granted=true
+      android.permission.READ_WIFI_CREDENTIAL: granted=true
+      android.permission.WRITE_GSERVICES: granted=true
+      android.permission.MANAGE_ACCOUNTS: granted=true
+      com.android.vending.APP_ERRORS_SERVICE: granted=true
+      android.permission.START_TASKS_FROM_RECENTS: granted=true
+      android.permission.NFC_TRANSACTION_EVENT: granted=true
+      com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE: granted=true
+      android.permission.MANAGE_WIFI_INTERFACES: granted=true
+      com.google.android.gms.auth.authzen.permission.DEVICE_SYNC_FINISHED: granted=true
+      android.permission.PROVIDE_TRUST_AGENT: granted=true
+      com.google.android.gms.chromesync.permission.CONTENT_PROVIDER_ACCESS: granted=true
+      android.permission.MANAGE_SOUND_TRIGGER: granted=true
+      android.permission.INSTALL_LOCATION_TIME_ZONE_PROVIDER_SERVICE: granted=true
+      android.permission.MANAGE_VOICE_KEYPHRASES: granted=true
+      android.permission.CHANGE_COMPONENT_ENABLED_STATE: granted=true
+      com.google.android.gms.permission.CHECKIN_NOW: granted=true
+      android.permission.NFC: granted=true
+      android.permission.MANAGE_WIFI_NETWORK_SELECTION: granted=true
+      com.google.android.gms.learning.permission.LAUNCH_IN_APP_PROXY: granted=true
+      android.permission.LOCK_DEVICE: granted=true
+      com.google.android.gms.permission.SEND_ANDROID_PAY_DATA: granted=true
+      android.permission.SET_BIOMETRIC_DIALOG_ADVANCED: granted=true
+      com.google.android.apps.now.OPT_IN_WIZARD: granted=true
+      com.google.android.gms.auth.authzen.permission.GCM_DEVICE_PROXIMITY: granted=true
+      android.permission.CALL_PRIVILEGED: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.MASTER_CLEAR: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.PERSISTENT_ACTIVITY: granted=true
+      android.permission.WRITE_SYNC_SETTINGS: granted=true
+      com.google.android.providers.gsf.permission.WRITE_GSERVICES: granted=true
+      android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.SUBSCRIBED_FEEDS_READ: granted=true
+      com.google.android.gms.permission.NEARBY_START_DISCOVERER: granted=true
+      com.google.android.gms.auth.permission.POST_SIGN_IN_ACCOUNT: granted=true
+      android.permission.UPDATE_FONTS: granted=true
+      android.permission.HIGH_SAMPLING_RATE_SENSORS: granted=true
+      com.google.android.providers.settings.permission.READ_GSETTINGS: granted=true
+      android.permission.ACCESS_ADSERVICES_STATE: granted=true
+      android.permission.MANAGE_GAME_ACTIVITY: granted=true
+      com.google.android.gms.cloudsave.BIND_EVENT_BROADCAST: granted=true
+      android.permission.SET_TIME_ZONE: granted=true
+      android.permission.MANAGE_SUBSCRIPTION_PLANS: granted=true
+      com.google.android.googlequicksearchbox.permission.PAUSE_HOTWORD: granted=true
+      com.google.android.gms.permission.REPORT_TAP: granted=true
+      android.permission.READ_PROFILE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.RESET_PASSWORD: granted=true
+      android.permission.CAPTURE_AUDIO_HOTWORD: granted=true
+      android.permission.CONTROL_DISPLAY_SATURATION: granted=true
+      com.android.vending.setup.PLAY_SETUP_SERVICE: granted=true
+      android.permission.GET_TASKS: granted=true
+      android.permission.SUBSCRIBED_FEEDS_WRITE: granted=true
+      android.permission.AUTHENTICATE_ACCOUNTS: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.INTENT_VENDING_ONLY: granted=true
+      com.google.android.gms.permission.C2D_MESSAGE: granted=true
+      com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN: granted=true
+      android.permission.REORDER_TASKS: granted=true
+      com.google.android.gms.presencemanager.permission.PRESENCE_MANAGER_UPDATE_BROADCAST: granted=true
+      com.google.android.gms.nearby.exposurenotification.EXPOSURE_CALLBACK: granted=true
+      com.google.android.gms.permission.PHENOTYPE_OVERRIDE_FLAGS: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.MANAGE_TIME_AND_ZONE_DETECTION: granted=true
+      android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND: granted=true
+      android.permission.READ_NEARBY_STREAMING_POLICY: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.UPDATE_DEVICE_STATS: granted=true
+      com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION: granted=true
+      com.google.android.gms.magictether.permission.CONNECTED_HOST_CHANGED: granted=true
+      com.google.android.gms.permission.CONTACTS_SYNC_DELEGATION: granted=true
+      android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS: granted=true
+      com.google.android.gms.permission.BIOAUTH_CONSENT: granted=true
+      android.permission.RECOVER_KEYSTORE: granted=true
+      android.permission.WRITE_DEVICE_CONFIG: granted=true
+      android.permission.SEND_SAFETY_CENTER_UPDATE: granted=true
+      com.google.android.gms.trustagent.permission.TRUSTAGENT_STATE: granted=true
+      android.permission.REQUEST_COMPANION_SELF_MANAGED: granted=true
+      android.permission.SETUP_FSVERITY: granted=true
+      android.permission.EMERGENCY_INSTALL_PACKAGES: granted=true
+      com.google.android.gms.dck.permission.DIGITAL_KEY_PRIVILEGED: granted=true
+      android.permission.GET_PACKAGE_SIZE: granted=true
+      com.google.android.c2dm.permission.SEND: granted=true
+      android.permission.ACCESS_CONTEXT_HUB: granted=true
+      android.permission.UWB_PRIVILEGED: granted=true
+      android.permission.MANAGE_USB: granted=true
+      android.permission.ALLOCATE_AGGRESSIVE: granted=true
+      com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST: granted=true
+      com.google.android.gms.permission.INTERNAL_BROADCAST: granted=true
+      com.google.android.gms.security.permission.BANK_SCAM_WARNING: granted=true
+      android.permission.PACKAGE_USAGE_STATS: granted=true
+      android.permission.PREPARE_FACTORY_RESET: granted=true
+      android.permission.WRITE_PROFILE: granted=true
+      android.permission.TETHER_PRIVILEGED: granted=true
+      android.permission.WRITE_SECURE_SETTINGS: granted=true
+      com.android.vending.TOS_ACKED: granted=true
+      android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED: granted=true
+      android.permission.CAPTURE_AUDIO_OUTPUT: granted=true
+      com.google.android.finsky.permission.INSTANT_APP_STATE: granted=true
+      com.google.android.gms.auth.proximity.permission.SMS_CONNECT_SETUP_REQUESTED: granted=true
+      android.permission.ACCESS_VIBRATOR_STATE: granted=true
+      android.permission.SATELLITE_COMMUNICATION: granted=true
+      android.permission.HIDE_OVERLAY_WINDOWS: granted=true
+      android.permission.SCORE_NETWORKS: granted=true
+      android.permission.LOG_COMPAT_CHANGE: granted=true
+      android.permission.USE_FULL_SCREEN_INTENT: granted=true
+      com.google.android.gms.permission.wearable.BUGREPORT_USER_CONSENT: granted=true
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS: granted=true
+      android.permission.READ_PRIVILEGED_PHONE_STATE: granted=true
+      com.google.android.gms.permission.GOOGLE_PAY: granted=true
+      android.permission.ACCESS_DOWNLOAD_MANAGER: granted=true
+      android.permission.BROADCAST_STICKY: granted=true
+      android.permission.BLUETOOTH_PRIVILEGED: granted=true
+      com.google.android.gms.smartdevice.permission.NOTIFY_QUICK_START_STATUS: granted=true
+      android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME: granted=true
+      android.permission.SET_TIME: granted=true
+      does.not.matter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.google.android.providers.settings.permission.WRITE_GSETTINGS: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.MODIFY_DAY_NIGHT_MODE: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+      android.permission.MANAGE_USERS: granted=true
+      com.android.vending.billing.BILLING_ACCOUNT_SERVICE: granted=true
+      android.permission.READ_DROPBOX_DATA: granted=true
+      com.google.android.gms.contextmanager.CONTEXT_MANAGER_RESTARTED_BROADCAST: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.RENOUNCE_PERMISSIONS: granted=true
+      android.permission.PROVIDE_DEFAULT_ENABLED_CREDENTIAL_SERVICE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DOMAIN_VERIFICATION_AGENT: granted=true
+      android.permission.MODIFY_DEFAULT_AUDIO_EFFECTS: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      android.permission.BACKUP: granted=true
+      com.google.android.gms.carsetup.DRIVING_MODE_MANAGER: granted=true
+      android.permission.USER_ACTIVITY: granted=true
+      android.permission.LOCAL_MAC_ADDRESS: granted=true
+      com.google.android.gms.permission.SHOW_PAYMENT_CARD_DETAILS: granted=true
+      com.google.android.gms.findmydevice.spot.permission.DEVICE_CHANGES: granted=true
+      android.permission.READ_LOGS: granted=true
+      com.google.android.gms.magictether.permission.SCANNED_DEVICE: granted=true
+      com.google.android.gms.auth.cryptauth.permission.CABLEV2_SERVER_LINK: granted=true
+      android.permission.INTERACT_ACROSS_USERS: granted=true
+      com.google.android.gms.permission.ACTIVITY_RECOGNITION: granted=true
+      android.permission.CREDENTIAL_MANAGER_SET_ORIGIN: granted=true
+      android.permission.ACCESS_NETWORK_CONDITIONS: granted=true
+      android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS: granted=true
+      com.google.android.setupwizard.SETUP_COMPAT_SERVICE: granted=true
+      android.permission.READ_DREAM_STATE: granted=true
+      android.permission.MANAGE_ROLLBACKS: granted=true
+      com.google.android.gms.permission.BIND_PAYMENTS_CALLBACK_SERVICE: granted=true
+      android.permission.READ_NETWORK_USAGE_HISTORY: granted=true
+      android.permission.KILL_BACKGROUND_PROCESSES: granted=true
+      com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      com.google.android.gms.locationsharingreporter.periodic.STATUS_UPDATE: granted=true
+      android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS: granted=true
+      android.permission.SCHEDULE_PRIORITIZED_ALARM: granted=true
+      android.permission.REQUEST_COMPANION_PROFILE_COMPUTER: granted=true
+      com.google.android.gms.permission.GRANT_WALLPAPER_PERMISSIONS: granted=true
+      android.permission.ACCESS_BROADCAST_RESPONSE_STATS: granted=true
+      android.permission.READ_SYNC_STATS: granted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION: granted=true
+      android.permission.REBOOT: granted=true
+      com.google.android.finsky.permission.DEVELOPER_GROUP_ID_INFO: granted=true
+      com.google.android.gms.chimera.permission.CONFIG_CHANGE: granted=true
+      com.google.android.gms.auth.permission.FACE_UNLOCK: granted=true
+      android.permission.CHECK_REMOTE_LOCKSCREEN: granted=true
+      com.google.android.setupwizard.pairing.NEARBY_BACKUP_SERVICE: granted=true
+      android.permission.FOREGROUND_SERVICE_MICROPHONE: granted=true
+      android.permission.REQUEST_DELETE_PACKAGES: granted=true
+      com.google.android.gms.auth.permission.GOOGLE_ACCOUNT_CHANGE: granted=true
+      com.google.android.gms.trustagent.framework.model.DATA_ACCESS: granted=true
+      android.permission.REMOTE_DISPLAY_PROVIDER: granted=true
+      android.permission.SUBSTITUTE_SHARE_TARGET_APP_NAME_AND_ICON: granted=true
+      android.permission.MANAGE_GAME_MODE: granted=true
+      com.android.chrome.TOS_ACKED: granted=true
+      com.android.vending.p2p.APP_INSTALL_API: granted=true
+      android.permission.READ_SYNC_SETTINGS: granted=true
+      android.permission.START_ACTIVITIES_FROM_BACKGROUND: granted=true
+      com.google.android.gms.permission.SHOW_TRANSACTION_RECEIPT: granted=true
+      android.permission.READ_COMPAT_CHANGE_CONFIG: granted=true
+      android.permission.OVERRIDE_WIFI_CONFIG: granted=true
+      android.permission.FORCE_STOP_PACKAGES: granted=true
+      android.permission.COMPANION_APPROVE_WIFI_CONNECTIONS: granted=true
+      androidx.legacy.coreui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS: granted=true
+      android.permission.VIBRATE: granted=true
+      com.google.android.gms.permission.ACCESS_NEARBY_SHARE_API: granted=true
+      android.permission.SET_LOW_POWER_STANDBY_PORTS: granted=true
+      android.permission.INVOKE_CARRIER_SETUP: granted=true
+      com.google.android.gms.time.permission.SEND_TRUSTED_TIME_SIGNAL: granted=true
+      android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST: granted=true
+      android.permission.WRITE_VERIFICATION_STATE_E2EE_CONTACT_KEYS: granted=true
+      com.google.android.gms.permission.SAFETY_NET: granted=true
+      com.google.android.gms.vehicle.permission.SHARED_AUTO_SENSOR_DATA: granted=true
+      com.google.android.finsky.permission.GEARHEAD_SERVICE: granted=true
+      android.permission.UPDATE_PRIVILEGED_AD_ID: granted=true
+      com.google.android.gsf.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.google.android.gms.googlehelp.LAUNCH_SUPPORT_SCREENSHARE: granted=true
+      android.permission.MODIFY_NETWORK_ACCOUNTING: granted=true
+      com.google.android.gms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      com.google.android.gms.common.internal.SHARED_PREFERENCES_PERMISSION: granted=true
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE: granted=true
+      com.google.android.gms.permission.SHOW_WARM_WELCOME_TAPANDPAY_APP: granted=true
+      android.permission.READ_SYSTEM_GRAMMATICAL_GENDER: granted=true
+      android.permission.CALL_AUDIO_INTERCEPTION: granted=true
+      android.permission.NOTIFY_PENDING_SYSTEM_UPDATE: granted=true
+      android.permission.DISPATCH_PROVISIONING_MESSAGE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.google.android.gms.permission.BROADCAST_TO_GOOGLEHELP: granted=true
+      com.google.android.finsky.permission.ACCESS_INSTANT_APP_NOTIFICATION_ENFORCEMENT: granted=true
+      android.permission.TURN_SCREEN_ON: granted=true
+      android.permission.USE_BIOMETRIC: granted=true
+      com.google.android.gms.permission.READ_VALUABLES_IMAGES: granted=true
+      android.permission.MODIFY_ADSERVICES_STATE: granted=true
+      com.google.android.gms.dtdi.permission.START_COMPONENTS: granted=true
+      com.google.android.gms.auth.authzen.permission.KEY_REGISTRATION_FINISHED: granted=true
+      com.google.android.gms.home.matter.BIND_MATTER_COMMISSIONING_SERVICE: granted=true
+      com.google.android.gms.magictether.permission.CLIENT_TETHERING_PREFERENCE_CHANGED: granted=true
+      android.permission.CONTROL_INCALL_EXPERIENCE: granted=true
+      android.permission.MODIFY_PHONE_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.STATUS_BAR: granted=true
+      android.permission.QUERY_ALL_PACKAGES: granted=true
+      android.permission.SEND_SMS_NO_CONFIRMATION: granted=true
+      com.google.android.gms.DRIVE: granted=true
+      com.google.android.gms.permission.AD_ID: granted=true
+      android.permission.DUMP: granted=true
+      androidx.legacy.coreutils.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.READ_DEVICE_CONFIG: granted=true
+      com.google.android.gms.permission.REQUEST_SCREEN_LOCK_COMPLEXITY: granted=true
+      android.permission.LOCATION_HARDWARE: granted=true
+      com.google.android.gms.people.permission.contactssync.BACKUP_SYNC_STATE_UPDATE_BROADCAST: granted=true
+      android.permission.WAKE_LOCK: granted=true
+      com.google.android.gms.auth.cryptauth.permission.KEY_CHANGE: granted=true
+      android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED: granted=true
+      android.permission.CONFIGURE_FACTORY_RESET_PROTECTION: granted=true
+      com.google.android.gms.permission.GROWTH: granted=true
+      android.permission.UPDATE_APP_OPS_STATS: granted=true
+      android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS: granted=true
+      android.permission.READ_OEM_UNLOCK_STATE: granted=true
+      com.android.vending.billing.ADD_CREDIT_CARD: granted=true
+      com.google.android.setupwizard.SETUP_PROGRESS_SERVICE: granted=true
+      android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS: granted=true
+      com.google.android.gtalkservice.permission.GTALK_SERVICE: granted=true
+      android.permission.MEDIA_CONTENT_CONTROL: granted=true
+      com.google.android.gms.magictether.permission.DISABLE_SOFT_AP: granted=true
+      com.google.android.gms.chromesync.permission.METADATA_UPDATED: granted=true
+    User 0: 
+      gids=[2001, 1005, 3002, 3003, 3001, 3007, 1007, 3006]
+      runtime permissions:
+        android.permission.READ_SMS: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.BODY_SENSORS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.NEARBY_WIFI_DEVICES: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.RECEIVE_MMS: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.RECEIVE_SMS: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_PHONE_STATE: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.SEND_SMS: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.CALL_PHONE: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.WRITE_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.CAMERA: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.WRITE_CALL_LOG: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_MEDIA_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_MEDIA_VIDEO: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.health.READ_HEALTH_DATA_IN_BACKGROUND: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.PROCESS_OUTGOING_CALLS: granted=true, flags=[ GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.GET_ACCOUNTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.UWB_RANGING: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACTIVITY_RECOGNITION: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.READ_CONTACTS: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=true, flags=[ SYSTEM_FIXED|GRANTED_BY_DEFAULT|RESTRICTION_SYSTEM_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ GRANTED_BY_DEFAULT]
+        android.permission.health.READ_HEART_RATE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED]
+        android.permission.ACCESS_MEDIA_LOCATION: granted=true, flags=[ GRANTED_BY_DEFAULT]
+
+Dexopt state:
+  [com.google.android.gsf]
+
+Compiler stats:
+  [com.google.android.gsf]
+    (No recorded stats)

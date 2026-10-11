@@ -1,0 +1,24 @@
+{
+    "name": "Android Automation Environment",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.11"
+        },
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-vscode.vscode-json",
+                "redhat.vscode-yaml",
+                "ms-azuretools.vscode-docker",
+                "GitHub.vscode-pull-request-github"
+            ]
+        }
+    },
+    "forwardPorts": [5555],
+    "postCreateCommand": "bash .devcontainer/setup.sh",
+    "remoteUser": "vscode"
+}
