@@ -70,3 +70,36 @@ Backup first: `seccfg`, `boot`, `init_boot`, `vbmeta`, `super`, `para`, `nvram`,
 - braxtech community: MT6835 unlock/slot-b bug confirmed
 - FCC 2A28USN512: SN512A/C/CC identical hardware
 - DevCheck: SN512C = MT6835, codename `sn512c`
+
+---
+
+## Verified live findings (subagent + direct)
+
+- Fastboot-verified: `unlocked:no`, `secure:yes`, `unlock_ability is FALSE`, `sys.oem_unlock_allowed=0`
+- PreLoader port reachable: `VID_0E8D&PID_2000` (COM3 when enumerated)
+- **eSIM-only** — AT&T eSIM + Trustonic DLC rules + `DeviceLockControllerGoogle` (financing lock)
+- `ADB_AUTOFIX` SYSTEM task on host: auto-binds WinUSB+GUID for MediaTek ADB on reconnect
+- Shizuku v13.6.0 confirmed running (adb mode) — restart recipe in `device-watcher.sh`
+- F-Droid installed OK; `install_non_market_apps=1`, `package_verifier_enable=0`
+
+## Complete pipeline (all staged, armed)
+
+```
+device appears (adb)          device appears (preloader COM)
+      |                              |
+ adb reboot edl              mtkclient printgpt
+   ↳ fails → reboot -p             |
+      |                      backup 12 partitions → ./backups/
+      └──────────► mtkclient ◄─────┘
+                   da seccfg unlock → reset → fastboot
+                         |
+              fastboot --disable-verity --disable-verification flash vbmeta_a/b
+              fastboot reboot fastboot (fastbootd)
+              fastboot flash system_a gsi/aosp-arm64-ab-gapps.img
+              fastboot -w → reboot
+```
+
+Staged assets:
+- `gsi/aosp-arm64-ab-gapps.img` — Android 15 ARM64 A/B GSI **with Google apps + Play Integrity spoof** (ponces/treble_aosp v2025.05.13, r32 base)
+- `backups/` — partition backups land here pre-unlock
+- `tools/mtkclient` @ plstage + `tools/BraX3-repair-tools` k6835v1 patches
