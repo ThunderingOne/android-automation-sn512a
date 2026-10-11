@@ -1,0 +1,37 @@
+=== Bootloader Unlock Testing ===
+
+Bootloader Status:
+unknown
+
+Verified Boot State:
+green
+
+OEM Unlock Supported:
+0
+
+Fastboot Unlock Test:
+Attempting to boot to bootloader...
+Device rebooting to bootloader...
+
+After booting to bootloader, try:
+fastboot oem unlock
+fastboot flashing unlock
+fastboot flashing get_unlock_ability
+
+Expected Result: Will likely fail on AT&T devices
+AT&T devices typically have OEM unlock disabled
+
+MTKClient Method:
+1. Download: https://github.com/bkerler/mtkclient
+2. Install Python 3.8+ and dependencies
+3. Install MediaTek USB drivers
+4. Boot to BROM mode:
+   - Power off device
+   - Hold Vol Up + Vol Down + Power
+   - Connect via USB
+5. Run commands:
+   - python mtk.py e metadata,userdata,md_udc
+   - python mtk.py da seccfg unlock
+
+WARNING: This will erase all data on the device!
+Backup important data before proceeding!

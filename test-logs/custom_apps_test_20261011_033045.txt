@@ -1,0 +1,37 @@
+=== Custom Apps Testing ===
+
+Sideloading Status:
+adb.exe: no devices/emulators found
+Sideloading setting not accessible
+
+Unknown Sources Status:
+adb.exe: no devices/emulators found
+Unknown sources not accessible
+
+Package Verification:
+adb.exe: no devices/emulators found
+Package verifier not accessible
+
+Browser Installation:
+adb.exe: no devices/emulators found
+Browser install not accessible
+
+Custom App Installation Methods:
+1. ADB Install:
+   adb install app.apk
+
+2. File Manager Install:
+   Download APK and install via file manager
+
+3. Browser Install:
+   Download APK in browser and install
+
+4. Package Manager Install:
+   Use F-Droid, Aurora Store, etc.
+
+Recommended Custom Apps:
+- F-Droid (open-source app store)
+- Aurora Store (Google Play alternative)
+- APKMirror (safe APK downloads)
+- Aptoide (alternative app store)
+- Shelter (work profile isolation)

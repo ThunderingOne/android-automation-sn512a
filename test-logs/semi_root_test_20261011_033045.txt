@@ -1,0 +1,34 @@
+=== Semi-Root Testing ===
+
+Shizuku Installation:
+Download: https://shizuku.rikka.app/
+Install: adb install shizuku.apk
+Enable: Settings > Developer Options > Wireless debugging
+
+Checking Shizuku installation...
+adb.exe: no devices/emulators found
+Shizuku not installed
+
+Wireless Debugging Status:
+adb.exe: no devices/emulators found
+Wireless debugging not accessible
+
+ADB over Network:
+Enable: Settings > Developer Options > Wireless debugging
+Connect: adb tcpip 5555
+Then: adb connect <device_ip>:5555
+
+Semi-Root Capabilities:
+- ADB shell privileges for apps
+- Can access system services
+- Can grant permissions
+- Can access restricted APIs
+- Cannot modify system partition
+- Cannot unlock bootloader
+
+Recommended Apps for Shizuku:
+- App Ops (permission management)
+- Brevent (background management)
+- Canta (uninstall system apps)
+- Insular (island alternative)
+- LADB (local ADB)
