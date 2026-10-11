@@ -46,6 +46,10 @@ while true; do
         echo "[$(date)] GhostLock probe..." >> "$LOG"
         bash ./ghostlock-probe.sh >> "$LOG" 2>&1
 
+        # GhostLock exploit attempt — gated by kernel/PORT_VERIFIED internally
+        echo "[$(date)] GhostLock exploit attempt..." >> "$LOG"
+        bash ./ghostlock-run.sh >> "$LOG" 2>&1
+
         # Run comprehensive tests
         echo "[$(date)] Running comprehensive tests..." >> "$LOG"
         bash ./comprehensive-testing.sh >> "$LOG" 2>&1
