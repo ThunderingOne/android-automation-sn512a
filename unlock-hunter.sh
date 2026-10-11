@@ -44,26 +44,31 @@ while true; do
     if [[ "$MTKPORT" =~ ^COM[0-9]+$ ]] || [ -n "$RAWMTK" ]; then
         echo "[$(date)] MTK device present (port=$MTKPORT raw=$RAWMTK) — launching mtkclient" | tee -a "$LOG"
 
-        # 1) GPT read test — try UsbDk auto-detect first (better handshake), fall back to COM
+        # Pick ONE transport for the whole session — UsbDk raw if device has no
+        # COM binding, else serial. Mixing breaks the session.
         if [ -n "$RAWMTK" ] && [ -z "$MTKPORT" ]; then
-            "$PY" "$MTK" printgpt --loader "$DA" 2>&1 | tee -a "$LOG" | tail -50
+            TPORT="";  # pyusb/UsbDk auto-detect
         else
-            "$PY" "$MTK" printgpt --serialport "$MTKPORT" --loader "$DA" 2>&1 | tee -a "$LOG" | tail -50
+            TPORT="--serialport $MTKPORT"
         fi
+        echo "[$(date)] Transport: ${TPORT:-usb-raw(UsbDk)}" | tee -a "$LOG"
+
+        # 1) GPT read test
+        "$PY" "$MTK" printgpt $TPORT --loader "$DA" 2>&1 | tee -a "$LOG" | tail -50
 
         # 2) backup critical partitions
         for P in seccfg boot_a boot_b init_boot_a init_boot_b vbmeta_a vbmeta_b para nvram persist proinfo frp; do
-            "$PY" "$MTK" r "$P" "$BK/$P.bin" --serialport "$MTKPORT" --loader "$DA" >> "$LOG" 2>&1 \
+            "$PY" "$MTK" r "$P" "$BK/$P.bin" $TPORT --loader "$DA" >> "$LOG" 2>&1 \
                 && echo "[+] $P backed up" | tee -a "$LOG" \
                 || echo "[-] $P failed" | tee -a "$LOG"
         done
 
         # 3) the unlock
         echo "[$(date)] Executing da seccfg unlock..." | tee -a "$LOG"
-        "$PY" "$MTK" da seccfg unlock --serialport "$MTKPORT" --loader "$DA" 2>&1 | tee -a "$LOG" | tail -25
+        "$PY" "$MTK" da seccfg unlock $TPORT --loader "$DA" 2>&1 | tee -a "$LOG" | tail -25
 
         # 4) reset → device lands in fastboot for unlock confirmation
-        "$PY" "$MTK" reset --serialport "$MTKPORT" --loader "$DA" >> "$LOG" 2>&1
+        "$PY" "$MTK" reset $TPORT --loader "$DA" >> "$LOG" 2>&1
         echo "[$(date)] Unlock done. Waiting for fastboot to disable verity + flash GSI..." | tee -a "$LOG"
 
         # 5) fastboot stage — disable AVB then flash GSI to system_a (fastbootd)
