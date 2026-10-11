@@ -332,3 +332,29 @@ All automation is complete and ready for use. The device is now optimally config
 
 ### Blocking item (physical)
 Device is powered off — unlock fires automatically the moment it enumerates. Power on or reconnect USB to proceed.
+
+## GhostLock (CVE-2026-43499) — confirmed viable root path
+
+**Kernel confirmed vulnerable**: `5.15.197-android13-8-00005-g2d8ad9139b89` is the
+certified public GKI build `android13-5.15-2026-03_r2` (commit `2d8ad9139b89`,
+CI build 15063902). The rtmutex fix landed in upstream **5.15.212**; our kernel
+is **5.15.197** and the vulnerable `remove_waiter()` code was verified in the
+public source at the exact commit. SPL 2026-09-05 is framework-only.
+
+**Assets extracted**:
+- `kernel/vmlinux` (471MB, full DWARF+BTF), `System.map`, `Image`, `kernel.config`
+- `kernel/sn512a-target/target.h` — exploit target ported from the iQOO Z9 5G
+  (MT6886, same android13-8 KMI) profile with SN512A symbol offsets
+- `exploit/` — aarch64 binaries built in codespace (cve-2026-43499[.so], -root)
+- `ksu/` — KernelSU manager + `lkm-aarch64-android13-5.15_kernelsu.ko` (exact KMI)
+- `kernel/gki-boot-r2.zip` → `boot-5.15.img` — signed Google boot image,
+  candidate stock `boot_a` restore media
+
+**On-device run**: push `exploit/cve-2026-43499` to `/data/local/tmp`, run
+`/system/bin/linker64 /data/local/tmp/cve-2026-43499` — constructor self-exec.
+Then `ksud` late-loads `kernelsu.ko` for a KernelSU session. No bootloader
+unlock, no wipe, Play Integrity stays green; root is per-boot.
+
+**Still needed**: device online for `ghostlock-probe.sh` checks (tracefs event
+id, /proc/iomem layout, MTE state) and a test run. Stack-geometry fields in
+target.h pending per-kernel disasm verification.
