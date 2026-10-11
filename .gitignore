@@ -1,0 +1,19 @@
+# Logs and generated output
+*-logs/
+accessibility-analysis/
+monitoring-logs/
+setup-logs/
+unlock-logs/
+automation-logs/
+codespaces-logs/
+test-logs/
+watcher.log
+*.txt
+*.log
+*.apk
+
+# Temp/OS
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db

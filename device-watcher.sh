@@ -27,10 +27,13 @@ while true; do
                 echo "[$(date)] Installing Shizuku..." >> "$LOG"
                 adb install -r ./shizuku.apk >> "$LOG" 2>&1
             fi
-            # Start Shizuku service via ADB (no root needed)
+            # Launch Shizuku app once so its data files (start.sh) exist,
+            # then start the Shizuku service via ADB (no root needed)
             echo "[$(date)] Starting Shizuku service..." >> "$LOG"
-            adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh >> "$LOG" 2>&1 || \
+            adb shell monkey -p moe.shizuku.privileged.api -c android.intent.category.LAUNCHER 1 >> "$LOG" 2>&1
+            sleep 4
             adb shell "sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh" >> "$LOG" 2>&1
+            adb shell "sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh" >> "$LOG" 2>&1
         fi
 
         # Run comprehensive tests
