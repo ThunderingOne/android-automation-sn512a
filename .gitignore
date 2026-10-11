@@ -23,4 +23,8 @@ gsi/
 backups/
 shizuku-libs/
 hunter-out.log
-kernel/
+# big kernel binaries stay local; keep small text files tracked
+kernel/*
+!kernel/*.py
+!kernel/*.config
+!kernel/sn512a-target/
