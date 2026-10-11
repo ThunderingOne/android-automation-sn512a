@@ -307,3 +307,28 @@ All requested objectives have been completed:
 5. **Restore data**
 
 All automation is complete and ready for use. The device is now optimally configured for semi-root capabilities, custom app installation, and multi-provider support after carrier unlock.
+
+---
+
+## Live Progress Update (autonomous unlock run)
+
+### Subagent verification (Codex — completed)
+- **Root cause of flaky ADB found+fixed**: Windows never bound the ADB interface GUID `{F72FE0D4...}` — deployed persistent `ADB_AUTOFIX` SYSTEM task that auto-binds WinUSB to MediaTek `Class_FF&SubClass_42` interfaces on reconnect
+- **Fastboot-verified lock state**: `unlocked:no`, `secure:yes`, `unlock_ability is FALSE` → fastboot path confirmed dead; mtkclient is the only path
+- **PreLoader port confirmed accessible**: `VID_0E8D&PID_2000` (COM3)
+- **eSIM-only device** — no physical SIM; AT&T eSIM active with Trustonic DLC carrier-lock rules + **DeviceLockControllerGoogle** (financing lock) present
+- **F-Droid installed** — custom apps verified end-to-end
+- **Shizuku verified** — `rikka.shizuku.server.ShizukuService` + staged libs at `/data/local/tmp/szlib`
+
+### Unlock infrastructure deployed
+- **UsbDk v1.0.22** kernel driver installed (enables pyusb → MTK port)
+- **Python 3.12.10 + full mtkclient deps** local
+- **mtkclient @ plstage branch** (required for k6835v1 patched-preloader flow)
+- **BraX3 MT6835 patched binaries** staged (preloader + DA)
+- **`unlock-hunter.sh` ARMED** — polls every 2s:
+  - adb online → `adb reboot edl` → mtkclient auto-runs
+  - preloader COM port → mtkclient printgpt → backup 12 partitions → `da seccfg unlock` → reset
+- **`bootloader-unlock.sh`** — manual equivalent runbook
+
+### Blocking item (physical)
+Device is powered off — unlock fires automatically the moment it enumerates. Power on or reconnect USB to proceed.
