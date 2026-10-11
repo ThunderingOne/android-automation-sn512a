@@ -3,7 +3,7 @@ set -e
 echo "=== Android Automation Environment Setup ==="
 
 sudo apt-get update
-sudo apt-get install -y android-tools-adb android-tools-fastboot wget curl git python3-pip unzip
+sudo apt-get install -y android-tools-adb android-tools-fastboot wget curl git python3-pip unzip libfuse2 fuse
 
 pip install --upgrade pip
 pip install pyusb pyserial pycryptodome
