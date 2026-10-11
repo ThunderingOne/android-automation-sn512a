@@ -19,3 +19,7 @@ watcher.log
 Thumbs.db
 tools/
 *.so
+gsi/
+backups/
+shizuku-libs/
+hunter-out.log
