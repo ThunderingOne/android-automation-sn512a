@@ -159,3 +159,15 @@ restores Enforcing, KernelSU LKM live (version=32601, uapi=2).
     * `/data/adb/ksu/bin/` has busybox, ksud, resetprop, bootctl.
 - ksud from shell (non-root) can only parse/validate (sepolicy patch is a no-op);
   all real control requires the manager or a root context.
+
+### Root grants + Termux (verified working)
+- KSU auto-seeded allowlist: moe.shizuku.privileged.api, org.fdroid.fdroid,
+  com.android.shell — all with allow_su, context u:r:ksu:s0.
+- .allowlist format: magic "USK\x7f" + u32 version(=4) + N x 0x310-byte records:
+  [u32 recver=4][package 256B][uid u32][4 flags u32][pad][se_context 32B]
+  [pad][u32][u32]. File is persistence only — live kernel list is updated via
+  manager (prctl CMD_SET_APP_PROFILE); file edits apply on next late-load.
+- Termux (com.termux v0.118.3 github-debug arm64) granted via manager
+  Superuser tab -> app -> Superuser toggle -> `su -c id` in Termux = uid 0.
+- Termux/RUN_COMMAND permission exists for future scripting:
+  pm grant com.termux com.termux.permission.RUN_COMMAND (untested).
