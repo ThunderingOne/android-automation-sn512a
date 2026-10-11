@@ -36,14 +36,20 @@ while true; do
         fi
     fi
 
-    # State B: MTK port present → run mtkclient NOW (handshake window)
+    # State B: MTK device present (COM port OR raw UsbDk) → run mtkclient NOW
     MTKPORT=$(powershell -NoProfile -Command \
       "(Get-PnpDevice -Class Ports -PresentOnly | Where-Object { \$_.InstanceId -match 'VID_0E8D' } | Select -First 1 -Expand FriendlyName) -replace '.*\((COM[0-9]+)\).*','\$1'" 2>/dev/null | tr -d '\r')
-    if [[ "$MTKPORT" =~ ^COM[0-9]+$ ]]; then
-        echo "[$(date)] MTK port $MTKPORT — launching mtkclient" | tee -a "$LOG"
+    RAWMTK=$(powershell -NoProfile -Command \
+      "(Get-PnpDevice -PresentOnly | Where-Object { \$_.InstanceId -match 'VID_0E8D' } | Select -First 1 -Expand FriendlyName)" 2>/dev/null | tr -d '\r')
+    if [[ "$MTKPORT" =~ ^COM[0-9]+$ ]] || [ -n "$RAWMTK" ]; then
+        echo "[$(date)] MTK device present (port=$MTKPORT raw=$RAWMTK) — launching mtkclient" | tee -a "$LOG"
 
-        # 1) GPT read test
-        "$PY" "$MTK" printgpt --serialport "$MTKPORT" --loader "$DA" 2>&1 | tee -a "$LOG" | tail -50
+        # 1) GPT read test — try UsbDk auto-detect first (better handshake), fall back to COM
+        if [ -n "$RAWMTK" ] && [ -z "$MTKPORT" ]; then
+            "$PY" "$MTK" printgpt --loader "$DA" 2>&1 | tee -a "$LOG" | tail -50
+        else
+            "$PY" "$MTK" printgpt --serialport "$MTKPORT" --loader "$DA" 2>&1 | tee -a "$LOG" | tail -50
+        fi
 
         # 2) backup critical partitions
         for P in seccfg boot_a boot_b init_boot_a init_boot_b vbmeta_a vbmeta_b para nvram persist proinfo frp; do
