@@ -27,13 +27,13 @@ while true; do
                 echo "[$(date)] Installing Shizuku..." >> "$LOG"
                 adb install -r ./shizuku.apk >> "$LOG" 2>&1
             fi
-            # Launch Shizuku app once so its data files (start.sh) exist,
-            # then start the Shizuku service via ADB (no root needed)
+            # Start Shizuku service directly via app_process + ServiceStarter
+            # (verified working on SN512A — starts shizuku_server as shell uid 2000)
             echo "[$(date)] Starting Shizuku service..." >> "$LOG"
-            adb shell monkey -p moe.shizuku.privileged.api -c android.intent.category.LAUNCHER 1 >> "$LOG" 2>&1
-            sleep 4
-            adb shell "sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh" >> "$LOG" 2>&1
-            adb shell "sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh" >> "$LOG" 2>&1
+            APKPATH=$(adb shell "pm path moe.shizuku.privileged.api" | tr -d '\r' | sed 's/package://')
+            adb shell "/system/bin/app_process -Djava.class.path=$APKPATH /system/bin --nice-name=shizuku_starter moe.shizuku.starter.ServiceStarter" >> "$LOG" 2>&1
+            sleep 3
+            adb shell "ps -A | grep shizuku_server" >> "$LOG" 2>&1
         fi
 
         # Run comprehensive tests
