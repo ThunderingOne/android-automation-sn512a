@@ -171,3 +171,15 @@ restores Enforcing, KernelSU LKM live (version=32601, uapi=2).
   Superuser tab -> app -> Superuser toggle -> `su -c id` in Termux = uid 0.
 - Termux/RUN_COMMAND permission exists for future scripting:
   pm grant com.termux com.termux.permission.RUN_COMMAND (untested).
+
+### KernelSU modules installed (session: LKM-loaded, overlays bind at post-fs-data)
+- busybox-ndk v1.36.1, nano-ndk v9.2, AdGuardDNS4Magisk v2.7f,
+  ssh v0.16 (OpenSSH 9.3 + rsync — sshd listening :22 after `ksud services`),
+  rclone.mount v1.14 (needs /sdcard/.rclone/rclone.conf), fdroid-priv-ext (2120).
+- SSH keys: /data/ssh/root/.ssh/authorized_keys + /data/ssh/shell/.ssh/authorized_keys
+  (local private key: devin-ssh-key in repo dir — no passphrase).
+- Module install via: adb push zip; /data/adb/ksud module install <zip>;
+  then `ksud post-fs-data` (finalize extraction) + `ksud services` (start service.sh).
+- customize.sh "can't create /proc/self/fd/0" warnings are benign (installer quirk).
+- /system overlays only materialize after a re-root + late-load cycle;
+  binaries are directly runnable from /data/adb/modules/<id>/ meanwhile.
